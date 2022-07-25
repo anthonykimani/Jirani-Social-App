@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;400;600&family=Poppins:wght@300;400;500&family=Roboto:wght@300;400;700&display=swap');
+
+*{
+  padding:0;
+  margin:0;
+  font-family:'Roboto',sans-serif;
+}
+
+:root{
+  /* colors */
+  --bg-grey-color:#ccc;
+  --bg-light-color:#fff;
+  --brand-color:blue;
+  --font-color:#112A46;
+  /* font-types */
+  --rb-font:'Roboto',sans-serif;
+  --int-font:'Inter',sans-serif;
+  --pop-font:'Poppins',sans-serif;
+  /* font-weight */
+  --weight-sm:300;
+  --weight-md:400;
+  --weight-lg:500;
+  --weight-xl:700;
+  /* font-sizes */
+  --sm:24px;
+  --md:32px;
+  --lg:38px;
+}
+
+body{
+  background-color: var(--bg-grey-color);
+}
+
+.navbar-container{
+  background-color: var(--bg-light-color);
+  display:flex;
+  justify-content:space-around;
+  align-items:center;
+  height:60px;
+}
+
+.logo-container{
+  color:var(--font-color);
+}
+
+.search-bar-container{
+  padding:10px;
+  background-color: var(--bg-grey-color);
+  color:var(--bg-grey-color);
+  border-radius:20px;
+  
+}
+
+.search-bar-container i{
+  color:var(--font-color);
+}
+
+.search-bar-container input{
+  outline:none;
+  border:none;
+  background-color: var(--bg-grey-color);
+  width:400px;
+}
+
+.profile-container button
+
+.profile-container img{
+  width:50px;
+  height:50px;
+  border-radius:60%;
+}
