@@ -93,12 +93,38 @@ body{
 
 /* MENU-CONTAINER-STYLES */
 .menu-container{
-  width:250px;
-  
+  width:220px;
+  background-color: var(--bg-light-color);
+  border-radius:15px;
 }
 
 .menu-container ul{
   display:flex;
   flex-direction:column;
-  align-items:flex-start;
+  align-items:center;
 }
+
+.menu-container ul li{
+  display:flex;
+  width:200px;
+  justify-content:space-around;
+  align-items:center;
+  height:40px;
+  padding:10px 0px;
+}
+
+.menu-container ul li .link i{
+  width:30px;
+  margin-left:20px;
+}
+
+.menu-container ul li .link{
+  display:flex;
+  align-items:center;
+  width:200px;
+  height:40px;
+  color:var(--font-color);
+  font-weight:var(--weight-xl);
+  text-decoration:none;
+}
+
