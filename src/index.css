@@ -4,6 +4,7 @@
   padding:0;
   margin:0;
   font-family:'Roboto',sans-serif;
+  border:1px solid red;
 }
 
 :root{
@@ -22,6 +23,8 @@
   --weight-lg:500;
   --weight-xl:700;
   /* font-sizes */
+  --xsm:16px;
+  --xm:20px;
   --sm:24px;
   --md:32px;
   --lg:38px;
@@ -62,7 +65,21 @@ body{
   width:400px;
 }
 
-.profile-container button
+.profile-container{
+  display:flex;
+  align-items:center;
+}
+
+.profile-container button{
+  width:100px;
+  height:40px;
+  border-radius:20px;
+  margin:0 30px;
+  background-color:var(--brand-color);
+  font-weight:var(--weight-xl);
+  font-size:var(--xsm);
+  color:white;
+}
 
 .profile-container img{
   width:50px;
