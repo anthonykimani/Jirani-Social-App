@@ -14,10 +14,10 @@ const Messages = () => {
         <div className="message-container">
             <div className="message-header">
                 <h4>Messages</h4>
-                <i class='bx bx-edit' ></i>
+                <i className='bx bx-edit' ></i>
             </div>
             <div className="search-messages-container">
-                <i class='bx bx-search bx-fw'></i>
+                <i className='bx bx-search bx-fw'></i>
                 <input type="text" placeholder="Search for messages , posts" />
             </div>
             <div className="message-section">

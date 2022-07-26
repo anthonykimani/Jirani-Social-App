@@ -10,7 +10,7 @@ const Message = ({message}) => {
         <p>{message.message}</p>
       </div>
       <div className="message-expand">
-        <i class="bx bx-chevron-down"></i>
+        <i className="bx bx-chevron-down"></i>
       </div>
     </div>
   );

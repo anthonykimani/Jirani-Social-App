@@ -47,13 +47,13 @@
       "likes": 26,
       "comments": [
         {
-          "name": "Looking great"
+          "comment": "Looking great"
         },
         {
-          "name": "Wow I like the view"
+          "comment": "Wow I like the view"
         },
         {
-          "name": "Haha , that was fun"
+          "comment": "Haha , that was fun"
         }
       ]
     },
@@ -64,15 +64,16 @@
       "likes": 40,
       "comments": [
         {
-          "name": "What a Sunset"
+          "comment": "What a Sunset"
         },
         {
-          "name": "On my bucket list"
+          "comment": "On my bucket list"
         },
         {
-          "name": "I need this"
+          "comment": "I need this"
         }
       ]
     }
-  ]
+  ],
+  "addpost": []
 }

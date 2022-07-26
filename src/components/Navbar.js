@@ -7,7 +7,7 @@ const Navbar = () => {
                 <h2>Jirani Connect</h2>
             </div>
             <div className="search-bar-container">
-                <i class='bx bx-search bx-fw'></i>
+                <i className='bx bx-search bx-fw'></i>
                 <input type="text" placeholder="Search for friends , posts" />
             </div>
             <div className="profile-container">

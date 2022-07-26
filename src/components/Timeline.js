@@ -5,6 +5,25 @@ import React, { useState, useEffect } from "react";
 
 const Timeline = () => {
   const [posts, setPosts] = useState([]);
+  const [newPost, setNewPost] = useState([]);
+
+  const addPost = (posted) => {
+    console.log(posted);
+    setNewPost([...newPost, posted]);
+    fetch("http://localhost:3000/addpost", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify(posted),
+    });
+  };
+
+  const posted = newPost.map((element, index) => (
+    <div className="newPost">
+      <h3>{element.content}</h3>
+    </div>
+  ));
 
   useEffect(() => {
     fetch("http://localhost:3000/posts")
@@ -19,7 +38,8 @@ const Timeline = () => {
   return (
     <div className="timeline-container">
       <Stories />
-      <CreatePost />
+      <CreatePost addPost={addPost} />
+      {posted}
       {timelinePosts}
     </div>
   );
