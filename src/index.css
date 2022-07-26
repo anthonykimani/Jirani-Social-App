@@ -6,7 +6,7 @@
   padding: 0;
   margin: 0;
   font-family: "Roboto", sans-serif;
-  /* border: 1px solid red; */
+  border: 1px solid red;
 }
 
 /* ADD CUSTOM CSS */
@@ -93,13 +93,16 @@ body {
 .home-container{
   display:flex;
   justify-content: space-around;
+  margin-top:10px;
 }
 
 /* MENU-CONTAINER-STYLES */
 .menu-container {
+  position:sticky;
   width: 220px;
   background-color: var(--bg-light-color);
   border-radius: 15px;
+  height:500px;
 }
 
 .menu-container ul {
@@ -136,25 +139,32 @@ body {
 /* STORIES CONTAINER */
 .stories-container{
   display:flex;
-
+  justify-content:space-around;
 }
 
 .stories-container img{
-  width:80px;
-  height:180px
+  width:95px;
+  height:200px;
+  border-radius:15px;
 }
 
+
+
+/* CREATEPOST CONTAINER */
 .createpost-container{
   background-color: var(--bg-light-color);
   color: var(--bg-grey-color);
   display:flex;
   align-items:center;
   border-radius: 30px;
+  padding:5px 0px;
+  margin:10px 0px;
 }
 .createpost-container img{
-  width: 50px;
-  height: 50px;
-  border-radius: 60%;
+  width: 35px;
+  height: 35px;
+  border-radius:60%;
+  margin-left:10px;
 }
 
 .createpost-container input {
@@ -170,18 +180,27 @@ body {
 .posts-container{
   background-color: var(--bg-light-color);
   border-radius:15px;
+  margin:20px 0px;
 }
 
 .post-header{
   display:flex;
   justify-content: space-between;
+  padding:5px;
 }
 
-.post-header img{
+.post-header-profile{
+  display:flex;
+  justify-content: space-around;
+  width:210px;
+}
+
+.post-header-profile img{
   width:50px;
   height:50px;
   border-radius:50%;
 }
+
 
 .post-image{
   display:flex;
@@ -191,12 +210,20 @@ body {
 
 .post-image img{
   width:600px;
-  border-radius:30px;
+  border-radius:50px;
 }
 
 .post-icons{
   display:flex;
   justify-content:space-between;
+}
+
+.post-icons-left{
+  margin:5px;
+}
+
+.post-icons-left i{
+  padding:5px;
 }
 
 .post-icons-paragraph-text{
@@ -216,5 +243,55 @@ body {
 .post-likes-img img{
   width:40px;
   height:40px;
+  border-radius:50%;
+}
+
+/* MESSAGES CONTAINER */
+.message-container{
+  display:flex;
+  flex-direction:column;
+  align-items: center;
+  width:300px;
+  background-color:var(--bg-light-color);
+  border-radius:15px;
+}
+
+.message-header{
+  display:flex;
+  justify-content:space-between;
+  width:280px;
+  margin:10px;
+}
+
+.search-messages-container{
+  background-color: var(--bg-grey-color);
+  padding:0px 10px;
+  border-radius:20px;
+}
+
+.search-messages-container input{
+  height:30px;
+  outline:none;
+  border:none;
+  background-color: var(--bg-grey-color);
+}
+
+.message-section{
+
+}
+
+.message-type{
+  display:flex;
+  justify-content: space-around;
+}
+
+.message{
+  display:flex;
+  padding:5px;
+}
+
+.message img{
+  width:50px;
+  height:50px;
   border-radius:50%;
 }

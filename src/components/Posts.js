@@ -7,12 +7,16 @@ const Posts = () => {
     return ( 
         <div className="posts-container">
             <div className="post-header">
-                <img src={blackLady} alt="" />
-                <div className="post-header-text">
-                    <h4>Antony Kimani</h4>
-                    <p>Nairobi,16 mins ago</p>
+                <div className="post-header-profile">
+                    <img src={blackLady} alt="" />
+                    <div>
+                        <h4>Antony Kimani</h4>
+                        <p>Nairobi,16 mins ago</p>
+                    </div>
                 </div>
-                <i class='bx bx-dots-horizontal-rounded'></i>
+                <div className="post-header-text">
+                    <i class='bx bx-dots-horizontal-rounded bx-sm'></i>
+                </div>
             </div>
             <div className="post-image">
                 <img src={summer} alt="" />
