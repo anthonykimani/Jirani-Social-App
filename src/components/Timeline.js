@@ -4,9 +4,10 @@ import Posts from "./Posts";
 
 const Timeline = () => {
     return ( 
-        <div>
+        <div className="timeline-container">
             <Stories />
             <CreatePost />
+            <Posts />
             <Posts />
         </div>
     );

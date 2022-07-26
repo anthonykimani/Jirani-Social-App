@@ -7,7 +7,7 @@ const Posts = () => {
     return ( 
         <div className="posts-container">
             <div className="post-header">
-                <img src="" alt="" />
+                <img src={blackLady} alt="" />
                 <div className="post-header-text">
                     <h4>Antony Kimani</h4>
                     <p>Nairobi,16 mins ago</p>
@@ -15,24 +15,24 @@ const Posts = () => {
                 <i class='bx bx-dots-horizontal-rounded'></i>
             </div>
             <div className="post-image">
-                <img src="" alt="" />
+                <img src={summer} alt="" />
             </div>
             <div className="post-icons">
                 <div className="post-icons-left">
-                    <i class='bx bx-heart' ></i>
-                    <i class='bx bx-message-square-dots' ></i>
-                    <i class='bx bx-share-alt' ></i>
+                    <i class='bx bx-heart bx-sm' ></i>
+                    <i class='bx bx-message-square-dots bx-sm' ></i>
+                    <i class='bx bx-share-alt bx-sm' ></i>
                 </div>
                 <div className="post-icons-right">
-                    <i class='bx bx-bookmark' ></i>
+                    <i class='bx bx-bookmark bx-sm' ></i>
                 </div>
             </div>
             <div className="post-icons-paragraph-text">
                 <div className="post-icons-likes">
                     <div className="post-likes-img">
-                        <img src='' alt="" />
-                        <img src='' alt="" />
-                        <img src='' alt="" />
+                        <img src={blackModel} alt="" />
+                        <img src={blackLady} alt="" />
+                        <img src={effielTower} alt="" />
                     </div>
                     <div className="post-likes-text">
                         <p>liked by TechBro,Jordan and Elon</p>
