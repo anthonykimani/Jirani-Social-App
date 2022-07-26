@@ -3,7 +3,7 @@ import CreatePost from "./CreatePost";
 import Posts from "./Posts";
 import React, { useState, useEffect } from "react";
 
-const Timeline = () => {
+const Timeline = ({isDarkMode}) => {
   const [posts, setPosts] = useState([]);
   const [newPost, setNewPost] = useState([]);
 
@@ -32,13 +32,13 @@ const Timeline = () => {
   }, []);
 
   const timelinePosts = posts.map((element, index) => (
-    <Posts posts={element} key={index} />
+    <Posts posts={element} key={index} isDarkMode={isDarkMode}/>
   ));
 
   return (
-    <div className="timeline-container">
+    <div className="timeline-container" >
       <Stories />
-      <CreatePost addPost={addPost} />
+      <CreatePost addPost={addPost} isDarkMode={isDarkMode}/>
       {posted}
       {timelinePosts}
     </div>

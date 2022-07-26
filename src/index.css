@@ -6,7 +6,7 @@
   padding: 0;
   margin: 0;
   font-family: "Roboto", sans-serif;
-  border: 1px solid red;
+  /* border: 1px solid red; */
 }
 
 /* ADD CUSTOM CSS */
@@ -14,6 +14,7 @@
   /* colors */
   --bg-grey-color: #ccc;
   --bg-light-color: #fff;
+  --bg-dark-color:rgb(28, 28, 28);
   --brand-color: blue;
   --font-color: #112a46;
   /* font-types */

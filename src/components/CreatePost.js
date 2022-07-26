@@ -1,7 +1,7 @@
 import profilePic from "../images/profile.jpg";
 import React,{useState,useEffect} from "react";
 
-const CreatePost = ({addPost}) => {
+const CreatePost = ({addPost,isDarkMode}) => {
     const [createPost,setCreatePost] = useState({
         "content":""
     })
@@ -19,10 +19,10 @@ const CreatePost = ({addPost}) => {
     }
 
   return (
-    <div className="createpost-container">
+    <div className="createpost-container" style={isDarkMode?{backgroundColor:"var(--bg-dark-color)"}:{backgroundColor:"var(--bg-light-color"}} >
       <img src={profilePic} alt="" />
         <form onSubmit={handleSubmit} >
-            <input type="text" onChange={handleGetInput} placeholder="Whats on your mind?" name="content" value={createPost.content} />
+            <input type="text" onChange={handleGetInput} placeholder="Whats on your mind?" name="content" value={createPost.content} style={isDarkMode?{backgroundColor:"var(--bg-dark-color)",color:"white"}:{backgroundColor:"var(--bg-light-color"}} />
             <input type="submit" id="create-button" value="Post" />
         </form>
     </div>

@@ -4,7 +4,7 @@ import summer from "../images/summer-time-beach-night.jpg";
 import blackLady from "../images/young-woman-wearing-orange-dress-with-turban-ethnic-jewelry.jpg";
 import React,{useState,useEffect} from "react";
 
-const Posts = ({ posts }) => {
+const Posts = ({ posts,isDarkMode}) => {
     const [comments,setComments] = useState('');
     const [newComment,setNewComment] = useState('')
     const [liked,setLiked] = useState(false)
@@ -32,7 +32,7 @@ const Posts = ({ posts }) => {
     }
 
   return (
-    <div className="posts-container">
+    <div className="posts-container" style={isDarkMode?{backgroundColor:"var(--bg-dark-color)",color:"white"}:{backgroundColor:"var(--bg-light-color"}}>
       <div className="post-header">
         <div className="post-header-profile">
           <img src={blackLady} alt="" />

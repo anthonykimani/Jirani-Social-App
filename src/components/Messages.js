@@ -1,7 +1,7 @@
 import Message from "./Message";
 import React,{useState,useEffect} from 'react';
 
-const Messages = () => {
+const Messages = ({isDarkMode}) => {
     const [message,setMessage] = useState([])
 
     useEffect(()=>{
@@ -11,7 +11,7 @@ const Messages = () => {
     },[])
 
     return ( 
-        <div className="message-container">
+        <div className="message-container" style={isDarkMode?{backgroundColor:"var(--bg-dark-color)",color:"white"}:{backgroundColor:"var(--bg-light-color"}}>
             <div className="message-header">
                 <h4>Messages</h4>
                 <i className='bx bx-edit' ></i>

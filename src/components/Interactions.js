@@ -1,9 +1,9 @@
 import Messages from "./Messages";
 
-const Interactions = () => {
+const Interactions = ({isDarkMode}) => {
     return ( 
         <div>
-            <Messages />
+            <Messages isDarkMode={isDarkMode} />
         </div>
      );
 }

@@ -1,31 +1,31 @@
 import { Link } from "react-router-dom";
 
-const Menu = () => {
+const Menu = ({isDarkMode}) => {
   return (
-    <div className="menu-container">
+    <div className="menu-container" style={isDarkMode?{backgroundColor:"var(--bg-dark-color)"}:{backgroundColor:"var(--bg-light-color"}}>
       <ul>
         <li>
-          <Link to={"/"} className="link">
+          <Link to={"/"} className="link" style={isDarkMode?{color:"var(--bg-light-color)"}:{color:"var(--bg-dark-color"}} >
             <i class="bx bx-home bx-sm"></i>Home
           </Link>
         </li>
         <li>
-          <Link to={"/trending"} className="link">
+          <Link to={"/trending"} className="link" style={isDarkMode?{color:"var(--bg-light-color)"}:{color:"var(--bg-dark-color"}}>
             <i class="bx bx-trending-up bx-sm"></i>Trending
           </Link>
         </li>
         <li>
-          <Link to={"/messages"} className="link">
+          <Link to={"/messages"} className="link" style={isDarkMode?{color:"var(--bg-light-color)"}:{color:"var(--bg-dark-color"}}>
             <i class="bx bx-message-dots bx-sm"></i>Messages
           </Link>
         </li>
         <li>
-          <Link to={"/connections"} className="link">
+          <Link to={"/connections"} className="link" style={isDarkMode?{color:"var(--bg-light-color)"}:{color:"var(--bg-dark-color"}}>
             <i class="bx bx-group bx-sm"></i>Connections
           </Link>
         </li>
         <li>
-          <Link to={"/settings"} className="link">
+          <Link to={"/settings"} className="link" style={isDarkMode?{color:"var(--bg-light-color)"}:{color:"var(--bg-dark-color"}}>
             <i class="bx bx-cog bx-sm"></i>Settings
           </Link>
         </li>
