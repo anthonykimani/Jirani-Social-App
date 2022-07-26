@@ -1,6 +1,15 @@
 import Message from "./Message";
+import React,{useState,useEffect} from 'react';
 
 const Messages = () => {
+    const [message,setMessage] = useState([])
+
+    useEffect(()=>{
+        fetch('http://localhost:3000/messages')
+        .then((response)=>response.json())
+        .then((data)=>setMessage(data))
+    },[])
+
     return ( 
         <div className="message-container">
             <div className="message-header">
@@ -17,11 +26,9 @@ const Messages = () => {
                     <p>General</p>
                     <p>Requests</p>
                 </div>
-                <Message />
-                <Message />
-                <Message />
-                <Message />
-                <Message />
+                {message.map(element=>(
+                    <Message message={element} />
+                ))}
             </div>
         </div>
      );

@@ -1,13 +1,13 @@
 import profilePic from '../images/profile.jpg'
 
+const Message = ({message}) => {
 
-const Message = () => {
   return (
     <div className="message">
       <img src={profilePic} alt="" />
       <div className="message-text">
-        <h4>Hello Kimani</h4>
-        <p>Are you available for an interview?</p>
+        <h4>{message.name}</h4>
+        <p>{message.message}</p>
       </div>
       <div className="message-expand">
         <i class="bx bx-chevron-down"></i>
