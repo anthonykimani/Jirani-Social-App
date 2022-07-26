@@ -1,44 +1,78 @@
 {
-    "stories":[
+  "stories": [
+    {
+      "image": "../src/images/close-up-model-wearing-make-up.jpg",
+      "alt": "model with make up"
+    },
+    {
+      "image": "../images/close-up-picnic-near-eiffel-tower.jpg",
+      "alt": "picnic in france"
+    },
+    {
+      "image": "../images/profile.jpg",
+      "alt": "profile pic"
+    },
+    {
+      "image": "../images/summer-time-beach-night.jpg",
+      "alt": "summer time"
+    },
+    {
+      "image": "../images/young-woman-wearing-orange-dress-with-turban-ethnic-jewelry.jpg",
+      "alt": "young woman"
+    }
+  ],
+  "messages": [
+    {
+      "name": "Sheila Nyambura",
+      "message": "Are you up for Drinks"
+    },
+    {
+      "name": "Donis Mweu",
+      "message": "Hey Bro, I deleted the Database!"
+    },
+    {
+      "name": "Amos John",
+      "message": "I saw your Profile and think you're a good fit.."
+    },
+    {
+      "name": "Wairimu Shiro",
+      "message": "Please check the Designs I sent"
+    }
+  ],
+  "posts": [
+    {
+      "name": "John Kamau",
+      "location": "Nairobi",
+      "time": "16mins ago",
+      "likes": 26,
+      "comments": [
         {
-            "image":"../src/images/close-up-model-wearing-make-up.jpg",
-            "alt":"model with make up"
+          "name": "Looking great"
         },
         {
-            "image":"../images/close-up-picnic-near-eiffel-tower.jpg",
-            "alt":"picnic in france"
+          "name": "Wow I like the view"
         },
         {
-            "image":"../images/profile.jpg",
-            "alt":"profile pic"
-        },
-        {
-            "image":"../images/summer-time-beach-night.jpg",
-            "alt":"summer time"
-        },
-        {
-            "image":"../images/young-woman-wearing-orange-dress-with-turban-ethnic-jewelry.jpg",
-            "alt":"young woman"
+          "name": "Haha , that was fun"
         }
-    ],
-    "messages":[
+      ]
+    },
+    {
+      "name": "Brian Wandego",
+      "location": "Arusha",
+      "time": "6mins ago",
+      "likes": 40,
+      "comments": [
         {
-            "name":"Sheila Nyambura",
-            "message":"Are you up for Drinks"
+          "name": "What a Sunset"
         },
         {
-            "name":"Donis Mweu",
-            "message":"Hey Bro, I deleted the Database!"
+          "name": "On my bucket list"
         },
         {
-            "name":"Amos John",
-            "message":"I saw your Profile and think you're a good fit.."
-        },
-        {
-            "name":"Wairimu Shiro",
-            "message":"Please check the Designs I sent"
+          "name": "I need this"
         }
-    ]
+      ]
+    }
+  ]
 }
-
-
