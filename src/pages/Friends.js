@@ -6,8 +6,21 @@ import React,{useState,useEffect} from "react";
 const Friends = ({ darkMode, isDarkMode }) => {
     const [friends,setFriends] = useState([])
 
+    const handleRemoveFriend = (id)=>{
+        fetch(`http://localhost:3000/friends/${id}`,{
+            method:"DELETE",
+        })
+        .then((response)=>response.json())
+        .then((data)=>{
+            const deleted = friends.filter((element)=>(
+                element.id !== id
+            ))
+            setFriends(deleted)
+        })
+    }
+    
     const friendList = friends.map((element)=>(
-        <Friend isDarkMode={isDarkMode} element={element} />
+        <Friend isDarkMode={isDarkMode} element={element} removeFriend={handleRemoveFriend} />
     ))
 
     useEffect(()=>{
@@ -15,6 +28,7 @@ const Friends = ({ darkMode, isDarkMode }) => {
         .then((response)=>response.json())
         .then((data)=>setFriends(data))
     },[])
+
 
   return (
     <div className="friends-container">

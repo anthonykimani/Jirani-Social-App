@@ -1,6 +1,6 @@
 import profilePic from '../images/profile.jpg'
 
-const Friend = ({ isDarkMode,element }) => {
+const Friend = ({ isDarkMode,element,removeFriend }) => {
   return (
     <div className="friend-container">
       <div className="friend-header">
@@ -10,7 +10,7 @@ const Friend = ({ isDarkMode,element }) => {
         </div>
           <p>{element.mutuals} mutual friends</p>
         <div className="button-container">
-          <button className="toggle-friend-button">Remove Friend</button>
+          <button className="toggle-friend-button" onClick={()=>removeFriend(element.id)} >Remove Friend</button>
         </div>
       </div>
     </div>
