@@ -455,6 +455,13 @@ body {
   border-bottom:0.5px solid gray;
 }
 
+.friends-section h2{
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  padding:20px;
+}
+
 .friend-header{
   display:flex;
   justify-content:space-around;
