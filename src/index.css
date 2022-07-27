@@ -498,3 +498,8 @@ body {
   outline:none;
   border:none;
 }
+
+/* SETTINGS PAGE */
+.settings-section{
+  margin-top:70px;
+}

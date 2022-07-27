@@ -228,5 +228,37 @@
       "mutuals": 32,
       "id": 16
     }
+  ],
+  "settings":[
+    {
+      "title":"Name",
+      "name":"Johnathan Kemboi",
+      "button":"edit"
+    },
+    {
+      "title":"Username",
+      "name":"https://jirani-social/Kemboi99",
+      "button":"edit"
+    },
+    {
+      "title":"Contact",
+      "name":"Primary",
+      "button":"edit"
+    },
+    {
+      "title":"Privacy",
+      "name":"Who can see your profile",
+      "button":"edit"
+    },
+    {
+      "title":"2-factor-authentication",
+      "name":"JohnathanKemboi@gmail.com",
+      "button":"edit"
+    },
+    {
+      "title":"Security",
+      "name":"confirm password",
+      "button":"edit"
+    }
   ]
 }
