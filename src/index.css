@@ -110,29 +110,30 @@ body {
 }
 /* HOME */
 .home-container{
-  display:flex;
-  justify-content: space-around;
+  /* display:flex;
+  justify-content: space-around; */
   margin-top:80px;
 }
 
 /* MENU-CONTAINER-STYLES */
 .menu-container {
-  width: 250px;
+  width:auto;
   background-color: var(--bg-light-color);
   border-radius: 15px;
   overflow: hidden;
-  height:350px;
+  /* height:350px; */
 }
 
 .menu-container ul {
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  /* flex-direction: column; */
+  /* align-items: center; */
+  justify-content:space-around;
 }
 
 .menu-container ul li {
   display: flex;
-  width: 250px;
+  width:auto;
   justify-content: space-around;
   align-items: center;
   height: 40px;
@@ -159,6 +160,12 @@ body {
   text-decoration: none;
 }
 
+/* TIMELINE CONTAINER */
+.timeline-container{
+  display:flex;
+  justify-content: space-around;
+}
+
 
 /* STORIES CONTAINER */
 .stories-container{
@@ -179,8 +186,10 @@ body {
   background-color: var(--bg-light-color);
   color: var(--bg-grey-color);
   display:flex;
+  justify-content:space-around;
   align-items:center;
   border-radius: 30px;
+  width:800px;
   padding:5px 0px;
   margin:10px 0px;
 }
@@ -195,7 +204,7 @@ body {
   outline: none;
   border:none;
   background-color: var(--bg-light-color);
-  width: 400px;
+  width: 550px;
   height:40px;
   margin-left:10px;
 }
@@ -209,7 +218,7 @@ body {
   background-color: var(--bg-light-color);
   border-radius:15px;
   margin:20px 0px;
-  width:550px;
+  width:800px;
 }
 
 .post-header{
@@ -251,7 +260,7 @@ body {
 }
 
 .post-image img{
-  width:500px;
+  width:750px;
   border-radius:10px;
 }
 
@@ -333,7 +342,7 @@ body {
   display:flex;
   flex-direction:column;
   align-items: center;
-  width:300px;
+  width:400px;
   background-color:var(--bg-light-color);
   border-radius:15px;
 }
@@ -386,7 +395,7 @@ body {
   cursor: pointer;
 }
 
-.message img{
+.message img,.text img{
   width:50px;
   height:50px;
   border-radius:50%;
@@ -395,4 +404,39 @@ body {
 .message-text{
   padding:5px;
   margin:5px;
+}
+
+/* =======MESSAGING PAGE===== */
+.message-page-section{
+  margin-top:65px;
+}
+
+/* TEXT */
+
+.texts-container{
+  display:flex;
+  flex-direction:column;
+  align-items: center;
+  width:100vw;
+  background-color:var(--bg-light-color);
+  border-radius:15px;
+}
+
+.text{
+  display:flex;
+  justify-content: space-between;
+  padding:10px;
+  width:90vw;
+  border-top:.5px solid grey;
+}
+
+.texts-header{
+  display:flex;
+  justify-content:space-between;
+  width:90vw;
+  margin:10px;
+}
+
+.text-text{
+  width:80vw;
 }

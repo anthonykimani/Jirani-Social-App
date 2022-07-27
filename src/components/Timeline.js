@@ -1,6 +1,7 @@
 import Stories from "./Stories";
 import CreatePost from "./CreatePost";
 import Posts from "./Posts";
+import Interactions from "../components/Interactions";
 import React, { useState, useEffect } from "react";
 
 const Timeline = ({isDarkMode}) => {
@@ -42,9 +43,14 @@ const Timeline = ({isDarkMode}) => {
 
   return (
     <div className="timeline-container" >
-      <CreatePost addPost={addPost} isDarkMode={isDarkMode}/>
-      {posted}
-      {timelinePosts}
+      <div className="timeline-left">
+        <CreatePost addPost={addPost} isDarkMode={isDarkMode}/>
+        {posted}
+        {timelinePosts}
+      </div>
+      <div className="timeline-right">
+        <Interactions isDarkMode={isDarkMode}/>
+      </div>
     </div>
   );
 };
