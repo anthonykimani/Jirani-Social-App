@@ -503,3 +503,44 @@ body {
 .settings-section{
   margin-top:70px;
 }
+
+.setting-container{
+  background-color: var(--bg-light-color);
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  justify-content: center;
+}
+
+.setting-container h2{
+  padding:40px 0px;
+}
+
+.setting{
+  display:flex;
+  width:1200px;
+  text-align:start;
+  justify-content:flex-start;
+  padding:20px;
+  border-bottom:.5px solid var(--bg-grey-color);
+}
+
+.setting h4{
+  text-align:start;
+  width:400px;
+}
+
+.setting p{
+  width:500px;
+}
+
+.setting button{
+  width:100px;
+  height:40px;
+}
+
+/* TRENDING PAGE */
+
+.trending-section{
+  margin-top:70px;
+}

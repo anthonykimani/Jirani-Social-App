@@ -4,7 +4,7 @@ const Setting = () => {
     const [setting,setSetting] = useState([])
 
     const settingData = setting.map((element)=>(
-        <div>
+        <div className="setting">
             <h4>{element.title}</h4>
             <p>{element.name}</p>
             <button>{element.button}</button>
