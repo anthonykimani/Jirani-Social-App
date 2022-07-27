@@ -75,5 +75,10 @@
       ]
     }
   ],
-  "addpost": []
+  "addpost": [
+    {
+      "content": "Feeling Blessed",
+      "id": 1
+    }
+  ]
 }

@@ -25,6 +25,11 @@ const Timeline = ({isDarkMode}) => {
     </div>
   ));
 
+  useEffect(()=>{
+      fetch("http://localhost:3000/addpost")
+      .then((response)=>response.json())
+  })
+
   useEffect(() => {
     fetch("http://localhost:3000/posts")
       .then((response) => response.json())
@@ -37,7 +42,6 @@ const Timeline = ({isDarkMode}) => {
 
   return (
     <div className="timeline-container" >
-      <Stories />
       <CreatePost addPost={addPost} isDarkMode={isDarkMode}/>
       {posted}
       {timelinePosts}

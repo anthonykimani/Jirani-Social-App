@@ -17,6 +17,7 @@
   --bg-dark-color:rgb(28, 28, 28);
   --brand-color: blue;
   --font-color: #112a46;
+  --hv-color:#ededed;
   /* font-types */
   --rb-font: "Roboto", sans-serif;
   --int-font: "Inter", sans-serif;
@@ -87,6 +88,7 @@ body {
   font-weight: var(--weight-xl);
   font-size: var(--xsm);
   color: white;
+  outline:none;
 }
 
 #create-button{
@@ -98,6 +100,7 @@ body {
   font-weight: var(--weight-xl);
   font-size: var(--xsm);
   color: white;
+  outline:none;
 }
 
 .profile-container img {
@@ -114,11 +117,11 @@ body {
 
 /* MENU-CONTAINER-STYLES */
 .menu-container {
-  position:sticky;
-  width: 220px;
+  width: 250px;
   background-color: var(--bg-light-color);
   border-radius: 15px;
-  height:500px;
+  overflow: hidden;
+  height:350px;
 }
 
 .menu-container ul {
@@ -129,11 +132,16 @@ body {
 
 .menu-container ul li {
   display: flex;
-  width: 200px;
+  width: 250px;
   justify-content: space-around;
   align-items: center;
   height: 40px;
   padding: 10px 0px;
+  border-bottom:.5px solid grey;
+}
+
+.menu-container ul li:hover{
+  background-color:var(--hv-color);
 }
 
 .menu-container ul li .link i {
@@ -192,30 +200,48 @@ body {
   margin-left:10px;
 }
 
+.newPost{
+  background-color:var(--bg-light-color);
+}
+
 /* posts-container */
 .posts-container{
   background-color: var(--bg-light-color);
   border-radius:15px;
   margin:20px 0px;
+  width:550px;
 }
 
 .post-header{
   display:flex;
   justify-content: space-between;
-  padding:5px;
+  padding:10px 20px;
 }
 
 .post-header-profile{
   display:flex;
   justify-content: space-around;
-  width:210px;
+  /* width:210px; */
+  font-family:var(--int-font);
 }
+
+.post-header-profile div div{
+  display:flex;
+  justify-content: space-between;
+}
+
+.post-header-profile div div h4{
+  margin:0px 5px;
+}
+
+
 
 .post-header-profile img{
   width:50px;
   height:50px;
-  border-radius:50%;
+  border-radius:30%;
 }
+
 
 
 .post-image{
@@ -225,8 +251,8 @@ body {
 }
 
 .post-image img{
-  width:600px;
-  border-radius:50px;
+  width:500px;
+  border-radius:10px;
 }
 
 .post-icons{
@@ -258,12 +284,48 @@ body {
 
 .post-likes-img{
   display:flex;
+  margin:0px 10px;
+}
+.post-likes-img img:nth-child(2){
+  position:relative;
+  right:25px;
+}
+
+.post-likes-img img:nth-child(3){
+  position:relative;
+  right:50px;
 }
 
 .post-likes-img img{
   width:40px;
   height:40px;
   border-radius:50%;
+}
+
+.post-likes-text p{
+  position: relative;
+  right:50px;
+  font-weight:var(--weight-xl);
+}
+
+.post-comments-container{
+  padding:20px;
+}
+
+.post-add-comments form {
+  display:flex;
+  justify-content:space-between;
+}
+
+.comment-button{
+
+}
+
+.comment{
+  height:30px;
+  border-radius:4px;
+  outline:none;
+  border:1px solid gray;
 }
 
 /* MESSAGES CONTAINER */
@@ -287,6 +349,7 @@ body {
   background-color: var(--bg-grey-color);
   padding:0px 10px;
   border-radius:20px;
+  margin:10px 0px;
 }
 
 .search-messages-container input{
@@ -303,15 +366,33 @@ body {
 .message-type{
   display:flex;
   justify-content: space-around;
+  border-top:.5px solid grey;
+  margin:10px 0px;
+}
+
+.message-type p{
+  font-weight:var(--weight-xl);
 }
 
 .message{
   display:flex;
-  padding:5px;
+  justify-content: space-between;
+  padding:10px;
+  border-top:.5px solid grey;
+}
+
+.message:hover{
+  background-color:var(--hv-color);
+  cursor: pointer;
 }
 
 .message img{
   width:50px;
   height:50px;
   border-radius:50%;
+}
+
+.message-text{
+  padding:5px;
+  margin:5px;
 }

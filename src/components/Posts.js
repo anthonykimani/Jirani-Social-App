@@ -37,9 +37,9 @@ const Posts = ({ posts,isDarkMode}) => {
         <div className="post-header-profile">
           <img src={blackLady} alt="" />
           <div>
-            <h4>{posts.name}</h4>
+            <h3>{posts.name}</h3>
             <div>
-              <p>{posts.location}</p>
+              <h4>{posts.location} ,</h4>
               <p>{posts.time}</p>
             </div>
           </div>
@@ -80,8 +80,8 @@ const Posts = ({ posts,isDarkMode}) => {
           </div>
           <div className="post-add-comments">
             <form onSubmit={handleSubmit} >
-              <input type="text" placeholder="Add comment" name="comment" onChange={handleAddcomment} />
-              <input type="submit" value="Comment"  />
+              <input type="text" className="comment" placeholder="Add comment" name="comment" onChange={handleAddcomment} />
+              <input type="submit" value="Comment" className="comment-button" />
             </form>
           </div>
         </div>
