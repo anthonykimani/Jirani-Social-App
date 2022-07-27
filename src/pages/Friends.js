@@ -21,12 +21,29 @@ const Friends = ({ darkMode, isDarkMode }) => {
         })
     }
 
-    const friendList = friends.map((element)=>(
-        <Friend isDarkMode={isDarkMode} element={element} removeFriend={handleRemoveFriend} />
+    const handleAcceptRequest = (id)=>{
+        fetch(`http://localhost:3000/requests/${id}`,{
+            method:"DELETE",
+        })
+        .then((response)=>response.json())
+        .then((data)=>{
+            const accepted = requests.filter((element)=>(
+                element.id !== id
+            ))
+            setRequests(accepted)
+            const newFriends = requests.filter((element)=>(
+                element.id === id
+            ))
+            setFriends([...friends,...newFriends])
+        })
+    }
+
+    const friendList = friends.map((element,index)=>(
+        <Friend isDarkMode={isDarkMode} element={element} removeFriend={handleRemoveFriend} key={index} />
     ))
 
-    const requestsList = requests.map((element)=>(
-        <Request isDarkMode={isDarkMode} element={element}  />
+    const requestsList = requests.map((element,index)=>(
+        <Request isDarkMode={isDarkMode} element={element} acceptRequest={handleAcceptRequest} key={index} />
     ))
 
     useEffect(()=>{

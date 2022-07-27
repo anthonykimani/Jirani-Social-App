@@ -1,6 +1,6 @@
 import profilePic from '../images/profile.jpg'
 
-const Request = ({element,isDarkmode}) => {
+const Request = ({element,isDarkmode,acceptRequest}) => {
   return (
     <div className="friend-container">
       <div className="friend-header">
@@ -12,6 +12,7 @@ const Request = ({element,isDarkmode}) => {
         <div className="button-container">
           <button
             className="toggle-friend-button"
+            onClick={()=>acceptRequest(element.id)}
           >
             Accept Request
           </button>
