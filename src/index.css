@@ -445,3 +445,49 @@ body {
 .friends-section{
   margin-top:70px;
 }
+
+.friends-container{
+  background-color: var(--bg-light-color);
+}
+
+.friend-container{
+  padding:10px;
+  border-bottom:0.5px solid gray;
+}
+
+.friend-header{
+  display:flex;
+  justify-content:space-around;
+}
+
+.friend-header img{
+  width:50px;
+  height:50px;
+  border-radius:50%;
+}
+
+.friend-text{
+  display:flex;
+  justify-content:space-around;
+  align-items:center;
+}
+
+.friend-text h4{
+  padding:10px;
+}
+
+.friend-header p{
+  align-items:center;
+}
+
+.toggle-friend-button{
+  width:130px;
+  height:40px;
+  padding:0px 10px;
+  background-color:var(--brand-color);
+  color:var(--bg-light-color);
+  font-weight:var(--weight-xl);
+  border-radius:25px;
+  outline:none;
+  border:none;
+}

@@ -1,15 +1,16 @@
+import profilePic from '../images/profile.jpg'
+
 const Friend = ({ isDarkMode,element }) => {
   return (
-    <div>
+    <div className="friend-container">
       <div className="friend-header">
-        <img src="" alt="" />
         <div className="friend-text">
+        <img src={profilePic} alt="" />
           <h4>{element.name}</h4>
-          <p>{element.mutuals} friends</p>
         </div>
+          <p>{element.mutuals} mutual friends</p>
         <div className="button-container">
-          <button className="accept-button">Accept Friend</button>
-          <button className="remove-button">Remove Friend</button>
+          <button className="toggle-friend-button">Remove Friend</button>
         </div>
       </div>
     </div>
