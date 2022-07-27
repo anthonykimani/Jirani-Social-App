@@ -80,5 +80,87 @@
       "content": "Feeling Blessed",
       "id": 1
     }
+  ],
+  "friends":[
+    {
+      "name":"Amos John",
+      "status":true,
+      "mutuals":32
+    },
+    {
+      "name":"Joseph Prea",
+      "status":true,
+      "mutuals":21
+    },
+    {
+      "name":"Amos John",
+      "status":true,
+      "mutuals":52
+    },
+    {
+      "name":"Amos John",
+      "status":true,
+      "mutuals":10
+    },
+    {
+      "name":"Amos John",
+      "status":true,
+      "mutuals":12
+    },
+    {
+      "name":"Amos John",
+      "status":true,
+      "mutuals":32
+    },
+    {
+      "name":"Amos John",
+      "status":true,
+      "mutuals":23
+    },
+    {
+      "name":"Amos John",
+      "status":true,
+      "mutuals":54
+    },
+    {
+      "name":"Amos John",
+      "status":true,
+      "mutuals":36
+    },
+    {
+      "name":"Amos John",
+      "status":true,
+      "mutuals":33
+    },
+    {
+      "name":"Amos John",
+      "status":true,
+      "mutuals":32
+    },
+    {
+      "name":"Amos John",
+      "status":true,
+      "mutuals":32
+    },
+    {
+      "name":"Amos John",
+      "status":true,
+      "mutuals":32
+    },
+    {
+      "name":"Amos John",
+      "status":true,
+      "mutuals":32
+    },
+    {
+      "name":"Amos John",
+      "status":true,
+      "mutuals":32
+    },
+    {
+      "name":"Amos John",
+      "status":true,
+      "mutuals":32
+    }
   ]
 }
