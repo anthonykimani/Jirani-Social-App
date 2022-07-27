@@ -3,7 +3,7 @@ import Posts from "./Posts";
 import Interactions from "../components/Interactions";
 import React, { useState, useEffect } from "react";
 
-const Timeline = ({isDarkMode}) => {
+const Timeline = ({ isDarkMode }) => {
   const [posts, setPosts] = useState([]);
   const [newPost, setNewPost] = useState([]);
 
@@ -25,10 +25,9 @@ const Timeline = ({isDarkMode}) => {
     </div>
   ));
 
-  useEffect(()=>{
-      fetch("http://localhost:3000/addpost")
-      .then((response)=>response.json())
-  })
+  useEffect(() => {
+    fetch("http://localhost:3000/addpost").then((response) => response.json());
+  });
 
   useEffect(() => {
     fetch("http://localhost:3000/posts")
@@ -37,19 +36,19 @@ const Timeline = ({isDarkMode}) => {
   }, []);
 
   const timelinePosts = posts.map((element, index) => (
-    <Posts posts={element} key={index} isDarkMode={isDarkMode}/>
+    <Posts posts={element} key={index} isDarkMode={isDarkMode} />
   ));
 
   return (
-    <div className="timeline-container" >
+    <div className="timeline-container">
       <div className="timeline-left">
-        <CreatePost addPost={addPost} isDarkMode={isDarkMode}/>
+        <CreatePost addPost={addPost} isDarkMode={isDarkMode} />
         {posted}
         {timelinePosts}
       </div>
-      <div className="timeline-right">
+      {/* <div className="timeline-right">
         <Interactions isDarkMode={isDarkMode}/>
-      </div>
+      </div> */}
     </div>
   );
 };

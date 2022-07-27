@@ -1,7 +1,6 @@
-import profilePic from '../images/profile.jpg'
+import profilePic from "../images/profile.jpg";
 
-const Message = ({message}) => {
-
+const Message = ({ message }) => {
   return (
     <div className="message">
       <img src={profilePic} alt="" />

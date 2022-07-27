@@ -2,37 +2,44 @@ import blackModel from "../images/close-up-model-wearing-make-up.jpg";
 import effielTower from "../images/close-up-picnic-near-eiffel-tower.jpg";
 import summer from "../images/summer-time-beach-night.jpg";
 import blackLady from "../images/young-woman-wearing-orange-dress-with-turban-ethnic-jewelry.jpg";
-import React,{useState,useEffect} from "react";
+import React, { useState, useEffect } from "react";
 
-const Posts = ({ posts,isDarkMode}) => {
-    const [comments,setComments] = useState('');
-    const [newComment,setNewComment] = useState('')
-    const [liked,setLiked] = useState(false)
+const Posts = ({ posts, isDarkMode }) => {
+  const [comments, setComments] = useState("");
+  const [newComment, setNewComment] = useState("");
+  const [liked, setLiked] = useState(false);
 
-    const handleLike = ()=>{
-        setLiked(!liked)
-    }
+  const handleLike = () => {
+    setLiked(!liked);
+  };
 
-    const handleAddcomment = (event)=>{
-        console.log({[event.target.name]:event.target.value})
-        setNewComment({[event.target.name]:event.target.value})
-    }
+  const handleAddcomment = (event) => {
+    console.log({ [event.target.name]: event.target.value });
+    setNewComment({ [event.target.name]: event.target.value });
+  };
 
-    const handleSubmit = (event)=>{
-        event.preventDefault();
-        setComments(newComment)
-        console.log(comments)
-        fetch("http://localhost:3000/posts",{
-            method:"POST",
-            headers:{
-                "Content-Type": "application/json",
-            },
-            body:JSON.stringify(comments)
-        })
-    }
+  const handleSubmit = (event) => {
+    event.preventDefault();
+    setComments(newComment);
+    console.log(comments);
+    fetch("http://localhost:3000/posts", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify(comments),
+    });
+  };
 
   return (
-    <div className="posts-container" style={isDarkMode?{backgroundColor:"var(--bg-dark-color)",color:"white"}:{backgroundColor:"var(--bg-light-color"}}>
+    <div
+      className="posts-container"
+      style={
+        isDarkMode
+          ? { backgroundColor: "var(--bg-dark-color)", color: "white" }
+          : { backgroundColor: "var(--bg-light-color" }
+      }
+    >
       <div className="post-header">
         <div className="post-header-profile">
           <img src={blackLady} alt="" />
@@ -53,12 +60,16 @@ const Posts = ({ posts,isDarkMode}) => {
       </div>
       <div className="post-icons">
         <div className="post-icons-left">
-          <i className={liked?"bx bxs-heart bx-sm":"bx bx-heart bx-sm"} onClick={handleLike} id={liked?"like":""}></i>
-          <i className="bx bx-message-square-dots bx-sm"></i>
-          <i className="bx bx-share-alt bx-sm"></i>
+          <i
+            className={liked ? "bx bxs-heart bx-md" : "bx bx-heart bx-md"}
+            onClick={handleLike}
+            id={liked ? "like" : ""}
+          ></i>
+          <i className="bx bx-message-square-dots bx-md"></i>
+          <i className="bx bx-share-alt bx-md"></i>
         </div>
         <div className="post-icons-right">
-          <i className="bx bx-bookmark bx-sm"></i>
+          <i className="bx bx-bookmark bx-md"></i>
         </div>
       </div>
       <div className="post-icons-paragraph-text">
@@ -75,12 +86,27 @@ const Posts = ({ posts,isDarkMode}) => {
         <div className="post-comments-container">
           <div className="post-comments">
             {posts.comments.map((element, index) => (
-              <p>{element.comment}</p>
+              <h3>{element.comment}</h3>
             ))}
           </div>
           <div className="post-add-comments">
-            <form onSubmit={handleSubmit} >
-              <input type="text" className="comment" placeholder="Add comment" name="comment" onChange={handleAddcomment} />
+            <form onSubmit={handleSubmit} style={
+        isDarkMode
+          ? { backgroundColor: "var(--bg-dark-color)" }
+          : { backgroundColor: "var(--bg-light-color" }
+      }>
+              <input
+                type="text"
+                className="comment"
+                style={
+                  isDarkMode
+                    ? { backgroundColor: "var(--bg-dark-color)" }
+                    : { backgroundColor: "var(--bg-light-color" }
+                }
+                placeholder="Add comment"
+                name="comment"
+                onChange={handleAddcomment}
+              />
               <input type="submit" value="Comment" className="comment-button" />
             </form>
           </div>
