@@ -20,8 +20,8 @@ const Menu = ({isDarkMode}) => {
           </Link>
         </li>
         <li>
-          <Link to={"/connections"} className="link" style={isDarkMode?{color:"var(--bg-light-color)"}:{color:"var(--bg-dark-color"}}>
-            <i class="bx bx-group bx-sm"></i>Connections
+          <Link to={"/friends"} className="link" style={isDarkMode?{color:"var(--bg-light-color)"}:{color:"var(--bg-dark-color"}}>
+            <i class="bx bx-group bx-sm"></i>Friends
           </Link>
         </li>
         <li>
