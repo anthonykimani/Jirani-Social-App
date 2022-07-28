@@ -19,10 +19,12 @@ const Trending = ({ darkMode, isDarkMode }) => {
     >
       <div className="trends-inner-container">
         <div className="trends-header">
-          <img src={process.env.PUBLIC_URL + element.image} alt="" />
-          <div className="trends-header-text">
-            <h2>{element.topic}</h2>
-            <p>{element.name}</p>
+          <div className="trends-profile-container">
+            <img src={process.env.PUBLIC_URL + element.image} alt="" />
+            <div className="trends-header-text">
+              <h2>{element.topic}</h2>
+              <p>{element.name}</p>
+            </div>
           </div>
           <i className="bx bx-dots-horizontal-rounded bx-sm"></i>
         </div>
@@ -43,7 +45,7 @@ const Trending = ({ darkMode, isDarkMode }) => {
           <div className="comment-bar">
             <form>
               <input type="text" />
-              <input type="submit" value="comment" id="submit-button"/>
+              <input type="submit" value="comment" id="submit-button" />
             </form>
           </div>
           <div className="comments">
