@@ -1,16 +1,18 @@
 import { Link } from "react-router-dom";
 
-const Menu = ({ isDarkMode }) => {
+const Menu = ({ isDarkMode, isOpen }) => {
   return (
     <div
       className="menu-container"
-      style={
-        isDarkMode
-          ? { backgroundColor: "var(--bg-dark-color)" }
-          : { backgroundColor: "var(--bg-light-color" }
-      }
+      style={isOpen ? { display: "block" } : { display: "none" }}
     >
-      <ul>
+      <ul
+        style={
+          isDarkMode
+            ? { backgroundColor: "var(--bg-dark-color)" }
+            : { backgroundColor: "var(--bg-light-color" }
+        }
+      >
         <li>
           <Link
             to={"/"}

@@ -1,7 +1,7 @@
 // import profilePic from "../images/profile.jpg";
 import { Link } from "react-router-dom";
 
-const Navbar = ({ darkMode, isDarkMode }) => {
+const Navbar = ({ darkMode, isDarkMode,handleOpenMenu }) => {
   return (
     <div
       className="navbar-container"
@@ -45,6 +45,7 @@ const Navbar = ({ darkMode, isDarkMode }) => {
           }
         ></i>
         <img src={process.env.PUBLIC_URL + "/profile.jpg"} alt="" />
+        <i className="bx bx-chevron-down bx-md" onClick={handleOpenMenu}></i>
       </div>
     </div>
   );

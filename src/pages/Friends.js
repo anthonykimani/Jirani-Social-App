@@ -4,7 +4,7 @@ import Friend from "../components/Friend";
 import React,{useState,useEffect} from "react";
 import Request from "../components/Request";
 
-const Friends = ({ darkMode, isDarkMode }) => {
+const Friends = ({ darkMode, isDarkMode,isOpen,handleOpenMenu }) => {
     const [friends,setFriends] = useState([])
     const [requests,setRequests]  = useState([])
 
@@ -61,9 +61,9 @@ const Friends = ({ darkMode, isDarkMode }) => {
 
   return (
     <div className="friends-container">
-      <Navbar darkMode={darkMode} isDarkMode={isDarkMode} />
+      <Navbar darkMode={darkMode} isDarkMode={isDarkMode} handleOpenMenu={handleOpenMenu} />
       <div className="friends-section">
-          <Menu isDarkMode={isDarkMode} />
+          <Menu isDarkMode={isDarkMode} isOpen={isOpen}  />
           <h2>Friend Requests</h2>
           {requestsList}
           <h2>Friends</h2>

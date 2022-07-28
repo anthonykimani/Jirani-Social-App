@@ -7,7 +7,13 @@ import Settings from "../pages/Settings";
 import Trending from "../pages/Trending";
 
 const App = () => {
+  const [openMenu,setOpenMenu] = useState(true);
   const [isDarkMode, setIsDarkMode] = useState(false);
+
+  const handleOpenMenu = ()=>{
+    setOpenMenu(!openMenu);
+  }
+
 
   const handleMode = () => {
     setIsDarkMode(!isDarkMode);
@@ -19,25 +25,30 @@ const App = () => {
         <Routes>
           <Route
             path="/"
-            element={<Home isDarkMode={isDarkMode} darkMode={handleMode} />}
+            element={<Home isDarkMode={isDarkMode} darkMode={handleMode} handleOpenMenu={handleOpenMenu} isOpen={openMenu
+            } />}
           />
           <Route
             path="/messages"
             element={
-              <Messaging isDarkMode={isDarkMode} darkMode={handleMode} />
+              <Messaging isDarkMode={isDarkMode} darkMode={handleMode} handleOpenMenu={handleOpenMenu} isOpen={openMenu
+              } />
             }
           />
           <Route
             path="/friends"
-            element={<Friends isDarkMode={isDarkMode} darkMode={handleMode} />}
+            element={<Friends isDarkMode={isDarkMode} darkMode={handleMode} handleOpenMenu={handleOpenMenu} isOpen={openMenu
+            } />}
           />
           <Route
             path="/settings"
-            element={<Settings isDarkMode={isDarkMode} darkMode={handleMode} />}
+            element={<Settings isDarkMode={isDarkMode} darkMode={handleMode} handleOpenMenu={handleOpenMenu} isOpen={openMenu
+            } />}
           />
           <Route
             path="/trending"
-            element={<Trending isDarkMode={isDarkMode} darkMode={handleMode} />}
+            element={<Trending isDarkMode={isDarkMode} darkMode={handleMode} handleOpenMenu={handleOpenMenu} isOpen={openMenu
+            } />}
           />
         </Routes>
       </Router>

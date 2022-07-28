@@ -2,7 +2,7 @@ import Navbar from "../components/Navbar";
 import Menu from "../components/Menu";
 import React, { useState, useEffect } from "react";
 
-const Trending = ({ darkMode, isDarkMode }) => {
+const Trending = ({ darkMode, isDarkMode,isOpen,handleOpenMenu }) => {
   const [trending, setTrending] = useState([]);
 
   const trends = trending.map((element, index) => (
@@ -65,9 +65,9 @@ const Trending = ({ darkMode, isDarkMode }) => {
 
   return (
     <div className="trending-container">
-      <Navbar darkMode={darkMode} isDarkMode={isDarkMode} />
+      <Navbar darkMode={darkMode} isDarkMode={isDarkMode} handleOpenMenu={handleOpenMenu} />
       <div className="trending-section">
-        <Menu isDarkMode={isDarkMode} />
+        <Menu isDarkMode={isDarkMode} isOpen={isOpen}  />
         {trends}
       </div>
     </div>
