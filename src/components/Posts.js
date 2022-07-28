@@ -8,6 +8,7 @@ const Posts = ({ posts, isDarkMode }) => {
   const [comments, setComments] = useState("");
   const [newComment, setNewComment] = useState("");
   const [liked, setLiked] = useState(false);
+  const [expand,setExpand] = useState(false);
 
 
   const altText = posts.alt
@@ -33,6 +34,10 @@ const Posts = ({ posts, isDarkMode }) => {
       body: JSON.stringify(comments),
     });
   };
+
+  const handleExpand = ()=>{
+    setExpand(!expand);
+  }
 
   return (
     <div
@@ -72,10 +77,10 @@ const Posts = ({ posts, isDarkMode }) => {
           <i className="bx bx-share-alt bx-md"></i>
         </div>
         <div className="post-icons-right">
-          <i className="bx bx-bookmark bx-md"></i>
+          <i className={expand?"bx bx-chevron-up bx-md":"bx bx-chevron-down bx-md"} onClick={handleExpand} ></i>
         </div>
       </div>
-      <div className="post-icons-paragraph-text">
+      <div className="post-icons-paragraph-text" style={expand?{display:"flex"}:{display:"none"}} >
         <div className="post-icons-likes">
           <div className="post-likes-img">
             <img src={process.env.PUBLIC_URL + posts.image} alt={altText} />

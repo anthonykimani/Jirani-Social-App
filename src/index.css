@@ -340,7 +340,7 @@ body {
 }
 
 .post-icons-paragraph-text {
-  display: flex;
+  display:flex;
   flex-direction: column;
 }
 
