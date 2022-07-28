@@ -523,6 +523,11 @@ body {
   border-top: 0.5px solid grey;
 }
 
+.text:hover {
+  background-color: var(--bg-grey-color);
+  cursor: pointer;
+}
+
 .texts-header {
   display: flex;
   justify-content: space-between;
@@ -532,6 +537,10 @@ body {
 
 .text-text {
   width: 80vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  border-radius: 15px;
 }
 
 /* FRIENDS PAGE */
@@ -657,9 +666,9 @@ body {
   padding: 0px 20px;
 }
 
-.trends-profile-container{
-  display:flex;
-  align-items:center;
+.trends-profile-container {
+  display: flex;
+  align-items: center;
 }
 
 .trends-header img {
@@ -739,7 +748,7 @@ body {
   }
 }
 
-@media(max-width:810px){
+@media (max-width: 810px) {
   .comment-bar form input {
     height: 30px;
     margin: 0px 30px;
@@ -772,20 +781,20 @@ body {
   }
 }
 
-@media(max-width:630px){
+@media (max-width: 630px) {
   .trends-body h2 {
     font-family: var(--pop-font);
     font-weight: var(--weight-xs);
     background-color: var(--bg-grey-color);
     width: 70%;
-    font-size:var(--xsm);
+    font-size: var(--xsm);
     border-radius: 10px;
     margin: 10px;
     padding: 20px;
   }
 }
 
-@media(max-width:600px){
+@media (max-width: 600px) {
   .comment-bar form input {
     height: 30px;
     margin: 0px 10px;
@@ -794,10 +803,10 @@ body {
   }
 }
 
-@media(max-width:425px){
+@media (max-width: 425px) {
   .comment-bar form {
     display: flex;
-    flex-direction:column;
+    flex-direction: column;
     justify-content: space-between;
     align-items: center;
   }
@@ -810,7 +819,7 @@ body {
   }
 }
 
-@media(max-width:375px){
+@media (max-width: 375px) {
   .trends-body h2 {
     font-family: var(--pop-font);
     font-weight: var(--weight-xs);
