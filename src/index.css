@@ -190,7 +190,6 @@ body {
   background-color: var(--bg-light-color);
   color: var(--bg-grey-color);
   display: flex;
-  justify-content: space-around;
   align-items: center;
   border-radius: 30px;
   max-width: 1200px;
@@ -207,7 +206,9 @@ body {
 
 .form-container {
   max-width: 900px;
+  margin-left:20px;
   display: flex;
+  justify-content: space-around;
   width: 100%;
 }
 
@@ -215,14 +216,53 @@ body {
   outline: none;
   border: none;
   background-color: var(--bg-light-color);
-  max-width: 750px;
   width: 100%;
   height: 40px;
+  font-size:var(--sm);
   margin-left: 10px;
 }
 
 .newPost {
   background-color: var(--bg-light-color);
+  height:130px;
+  border-bottom:.5px solid var(--bg-grey-color);
+  padding:0px 20px;
+  border-radius:8px;
+  display: flex;
+  flex-direction:column;
+  margin:10px 0px;
+}
+
+.newPost-header{
+  display:flex;
+  align-items:center;
+  padding:5px 20px;
+  justify-content: space-between;
+}
+
+.newPost-header-left{
+  display: flex;
+  align-items: center;
+}
+
+.newPost-header p{
+  font-weight:var(--weight-xl);
+  margin-left:10px;
+}
+
+.newPost-body{
+  padding-left:70px;
+  display: flex;
+  justify-content:start;
+  align-items:center;
+  background-color: var(--bg-grey-color);
+  max-width:auto;
+  width:90%;
+  height:50px;
+}
+
+.newPost-body h3{
+  font-weight:var(--weight-md);
 }
 
 /* posts-container */

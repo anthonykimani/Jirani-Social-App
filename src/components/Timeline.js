@@ -21,13 +21,27 @@ const Timeline = ({ isDarkMode }) => {
 
   const posted = newPost.map((element, index) => (
     <div className="newPost">
-      <h3>{element.content}</h3>
+      <div className="newPost-header">
+        <div className="newPost-header-left">
+          <i class='bx bxs-user-circle bx-lg'></i>
+          <p>Anonymous User . </p>
+          <p> 1 min ago</p>
+        </div>
+        <div className="newPost-header-right">
+          <i className="bx bx-dots-horizontal-rounded bx-sm"></i>
+        </div>
+      </div>
+        <div className="newPost-body">
+          <h3>{element.content}</h3>
+        </div>
     </div>
   ));
 
   useEffect(() => {
-    fetch("http://localhost:3000/addpost").then((response) => response.json());
-  });
+    fetch("http://localhost:3000/addpost")
+    .then((response) => response.json())
+    .then((data)=>setNewPost(data))
+  },[]);
 
   useEffect(() => {
     fetch("http://localhost:3000/posts")

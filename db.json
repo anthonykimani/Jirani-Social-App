@@ -1,7 +1,6 @@
 {
   "stories": [
-    {
-    },
+    {},
     {
       "image": "../images/close-up-picnic-near-eiffel-tower.jpg",
       "alt": "picnic in france"
@@ -10,8 +9,7 @@
       "image": "../images/profile.jpg",
       "alt": "profile pic"
     },
-    {
-    },
+    {},
     {
       "image": "../images/young-woman-wearing-orange-dress-with-turban-ethnic-jewelry.jpg",
       "alt": "young woman"
@@ -39,7 +37,7 @@
     {
       "name": "John Kamau",
       "location": "Nairobi",
-      "profile":"/young-woman-wearing-orange-dress-with-turban-ethnic-jewelry.jpg",
+      "profile": "/young-woman-wearing-orange-dress-with-turban-ethnic-jewelry.jpg",
       "image": "/summer-time-beach-night.jpg",
       "alt": "summer time",
       "time": "16mins ago",
@@ -59,7 +57,7 @@
     {
       "name": "Brian Wandego",
       "location": "Arusha",
-      "profile":"/close-up-model-wearing-make-up.jpg",
+      "profile": "/close-up-model-wearing-make-up.jpg",
       "image": "/close-up-picnic-near-eiffel-tower.jpg",
       "alt": "model with make up",
       "time": "6mins ago",
@@ -77,16 +75,7 @@
       ]
     }
   ],
-  "addpost": [
-    {
-      "content": "Feeling Blessed",
-      "id": 1
-    },
-    {
-      "content": "",
-      "id": 2
-    }
-  ],
+  "addpost": [],
   "friends": [
     {
       "name": "Amos John",
