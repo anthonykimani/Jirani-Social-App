@@ -5,8 +5,9 @@
 import React, { useState, useEffect } from "react";
 
 const Posts = ({ posts, isDarkMode }) => {
-  const [comments, setComments] = useState("");
+  const [comments, setComments] = useState({});
   const [newComment, setNewComment] = useState("");
+  const [postComment,setPostComment] = useState([])
   const [liked, setLiked] = useState(false);
   const [expand,setExpand] = useState(false);
 
@@ -26,14 +27,24 @@ const Posts = ({ posts, isDarkMode }) => {
     event.preventDefault();
     setComments(newComment);
     console.log(comments);
-    fetch("http://localhost:3000/posts", {
+    fetch("http://localhost:3000/comments",{
       method: "POST",
       headers: {
         "Content-Type": "application/json",
       },
-      body: JSON.stringify(comments),
-    });
+      body: JSON.stringify(newComment),
+    })
   };
+
+  useEffect(()=>{
+    fetch("http://localhost:3000/comments")
+    .then((response)=>response.json())
+    .then((data)=>setPostComment(data))
+  },[comments])
+
+  const postedComment = postComment.map((element,index)=>(
+    <h3>{element.comment}</h3>
+  ))
 
   const handleExpand = ()=>{
     setExpand(!expand);
@@ -93,9 +104,10 @@ const Posts = ({ posts, isDarkMode }) => {
         </div>
         <div className="post-comments-container">
           <div className="post-comments">
-            {posts.comments.map((element, index) => (
+            {posts.commentList.map((element, index) => (
               <h3>{element.comment}</h3>
-            ))}
+              ))}
+              {postedComment}
           </div>
           <div className="post-add-comments">
             <form onSubmit={handleSubmit} style={

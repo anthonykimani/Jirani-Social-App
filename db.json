@@ -42,7 +42,7 @@
       "alt": "summer time",
       "time": "16mins ago",
       "likes": 26,
-      "comments": [
+      "commentList": [
         {
           "comment": "Looking great"
         },
@@ -62,7 +62,7 @@
       "alt": "model with make up",
       "time": "6mins ago",
       "likes": 40,
-      "comments": [
+      "commentList": [
         {
           "comment": "What a Sunset"
         },
@@ -75,6 +75,7 @@
       ]
     }
   ],
+  "comments": [],
   "addpost": [],
   "friends": [
     {

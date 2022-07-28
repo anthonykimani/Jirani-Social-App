@@ -1,6 +1,5 @@
 import CreatePost from "./CreatePost";
 import Posts from "./Posts";
-import Interactions from "../components/Interactions";
 import React, { useState, useEffect } from "react";
 
 const Timeline = ({ isDarkMode }) => {
@@ -23,7 +22,7 @@ const Timeline = ({ isDarkMode }) => {
     <div className="newPost">
       <div className="newPost-header">
         <div className="newPost-header-left">
-          <i class='bx bxs-user-circle bx-lg'></i>
+          <i class="bx bxs-user-circle bx-lg"></i>
           <p>Anonymous User . </p>
           <p> 1 min ago</p>
         </div>
@@ -31,17 +30,17 @@ const Timeline = ({ isDarkMode }) => {
           <i className="bx bx-dots-horizontal-rounded bx-sm"></i>
         </div>
       </div>
-        <div className="newPost-body">
-          <h3>{element.content}</h3>
-        </div>
+      <div className="newPost-body">
+        <h3>{element.content}</h3>
+      </div>
     </div>
   ));
 
   useEffect(() => {
     fetch("http://localhost:3000/addpost")
-    .then((response) => response.json())
-    .then((data)=>setNewPost(data))
-  },[]);
+      .then((response) => response.json())
+      .then((data) => setNewPost(data));
+  }, []);
 
   useEffect(() => {
     fetch("http://localhost:3000/posts")

@@ -253,7 +253,7 @@ body {
 .newPost-body{
   padding-left:70px;
   display: flex;
-  justify-content:start;
+  justify-content:flex-start;
   align-items:center;
   background-color: var(--bg-grey-color);
   max-width:auto;
