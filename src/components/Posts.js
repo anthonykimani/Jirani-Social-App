@@ -7,12 +7,11 @@ import React, { useState, useEffect } from "react";
 const Posts = ({ posts, isDarkMode }) => {
   const [comments, setComments] = useState({});
   const [newComment, setNewComment] = useState("");
-  const [postComment,setPostComment] = useState([])
+  const [postComment, setPostComment] = useState([]);
   const [liked, setLiked] = useState(false);
-  const [expand,setExpand] = useState(false);
+  const [expand, setExpand] = useState(false);
 
-
-  const altText = posts.alt
+  const altText = posts.alt;
 
   const handleLike = () => {
     setLiked(!liked);
@@ -27,38 +26,38 @@ const Posts = ({ posts, isDarkMode }) => {
     event.preventDefault();
     setComments(newComment);
     console.log(comments);
-    fetch("http://localhost:3000/comments",{
+    fetch("https://json-template-kim.herokuapp.com/comments", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
       },
       body: JSON.stringify(newComment),
-    })
+    });
   };
 
-  useEffect(()=>{
-    fetch("http://localhost:3000/comments")
-    .then((response)=>response.json())
-    .then((data)=>setPostComment(data))
-  },[comments])
+  useEffect(() => {
+    fetch("https://json-template-kim.herokuapp.com/comments")
+      .then((response) => response.json())
+      .then((data) => setPostComment(data));
+  }, [comments]);
 
-  const postedComment = postComment.map((element,index)=>(
+  const postedComment = postComment.map((element, index) => (
     <div className="post-user-comments">
       <i class="bx bxs-user-circle bx-md"></i>
       <h3>{element.comment}</h3>
     </div>
-  ))
+  ));
 
-  const handleExpand = ()=>{
+  const handleExpand = () => {
     setExpand(!expand);
-  }
+  };
 
   return (
     <div
       className="posts-container"
       style={
         isDarkMode
-          ? { backgroundColor: "var(--bg-dark-color)", color: "white" }
+          ? { backgroundColor: "var(--bg-dark-color)",color: "white" }
           : { backgroundColor: "var(--bg-light-color" }
       }
     >
@@ -91,10 +90,18 @@ const Posts = ({ posts, isDarkMode }) => {
           <i className="bx bx-share-alt bx-md"></i>
         </div>
         <div className="post-icons-right">
-          <i className={expand?"bx bx-chevron-up bx-md":"bx bx-chevron-down bx-md"} onClick={handleExpand} ></i>
+          <i
+            className={
+              expand ? "bx bx-chevron-up bx-md" : "bx bx-chevron-down bx-md"
+            }
+            onClick={handleExpand}
+          ></i>
         </div>
       </div>
-      <div className="post-icons-paragraph-text" style={expand?{display:"flex"}:{display:"none"}} >
+      <div
+        className="post-icons-paragraph-text"
+        style={expand ? { display: "flex" } : { display: "none" }}
+      >
         <div className="post-icons-likes">
           <div className="post-likes-img">
             <img src={process.env.PUBLIC_URL + posts.image} alt={altText} />
@@ -105,37 +112,70 @@ const Posts = ({ posts, isDarkMode }) => {
             <p>{posts.likes} Likes</p>
           </div>
         </div>
-        <div className="post-comments-container" style={
-        isDarkMode
-          ? { backgroundColor: "var(--bg-dark-color)",color:"var(--bg-light-color)" }
-          : { backgroundColor: "var(--bg-light-color",color:"var(--bg-dark-color)" }
-      }>
-          <div className="post-comments" style={
-        isDarkMode
-          ? { backgroundColor: "var(--bg-dark-color)",color:"var(--bg-light-color)" }
-          : { backgroundColor: "var(--bg-grey-color",color:"var(--bg-dark-color)" }
-      }>
+        <div
+          className="post-comments-container"
+          style={
+            isDarkMode
+              ? {
+                  backgroundColor: "var(--bg-dark-color)",
+                  color: "var(--bg-light-color)",
+                }
+              : {
+                  backgroundColor: "var(--bg-light-color",
+                  color: "var(--bg-dark-color)",
+                }
+          }
+        >
+          <div
+            className="post-comments"
+            style={
+              isDarkMode
+                ? {
+                    backgroundColor: "var(--bg-dark-color)",
+                    color: "var(--bg-light-color)",
+                  }
+                : {
+                    backgroundColor: "var(--bg-grey-color",
+                    color: "var(--bg-dark-color)",
+                  }
+            }
+          >
             {posts.commentList.map((element, index) => (
               <div className="posted-user-comments">
                 <i class="bx bxs-user-circle bx-md"></i>
                 <h3>{element.comment}</h3>
               </div>
-              ))}
-              {postedComment}
+            ))}
+            {postedComment}
           </div>
           <div className="post-add-comments">
-            <form onSubmit={handleSubmit} style={
-        isDarkMode
-          ? { backgroundColor: "var(--bg-dark-color)",color:"var(--bg-light-color)" }
-          : { backgroundColor: "var(--bg-light-color",color:"var(--bg-dark-color)" }
-      }>
+            <form
+              onSubmit={handleSubmit}
+              style={
+                isDarkMode
+                  ? {
+                      backgroundColor: "var(--bg-dark-color)",
+                      color: "var(--bg-light-color)",
+                    }
+                  : {
+                      backgroundColor: "var(--bg-light-color",
+                      color: "var(--bg-dark-color)",
+                    }
+              }
+            >
               <input
                 type="text"
                 className="comment"
                 style={
                   isDarkMode
-                    ? { backgroundColor: "var(--bg-dark-color)",color:"var(--bg-light-color)" }
-                    : { backgroundColor: "var(--bg-light-color",color:"var(--bg-dark-color)" }
+                    ? {
+                        backgroundColor: "var(--bg-dark-color)",
+                        color: "var(--bg-light-color)",
+                      }
+                    : {
+                        backgroundColor: "var(--bg-light-color",
+                        color: "var(--bg-dark-color)",
+                      }
                 }
                 placeholder="Add comment"
                 name="comment"

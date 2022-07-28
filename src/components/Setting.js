@@ -12,7 +12,7 @@ const Setting = () => {
   ));
 
   useEffect(() => {
-    fetch("http://localhost:3000/settings")
+    fetch("https://json-template-kim.herokuapp.com/settings")
       .then((response) => response.json())
       .then((data) => setSetting(data));
   }, []);

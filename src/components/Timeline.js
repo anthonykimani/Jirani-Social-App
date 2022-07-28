@@ -9,7 +9,7 @@ const Timeline = ({ isDarkMode }) => {
   const addPost = (posted) => {
     console.log(posted);
     setNewPost([...newPost, posted]);
-    fetch("http://localhost:3000/addpost", {
+    fetch("https://json-template-kim.herokuapp.com/addpost", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
@@ -37,13 +37,13 @@ const Timeline = ({ isDarkMode }) => {
   ));
 
   useEffect(() => {
-    fetch("http://localhost:3000/addpost")
+    fetch("https://json-template-kim.herokuapp.com/addpost")
       .then((response) => response.json())
       .then((data) => setNewPost(data));
   }, []);
 
   useEffect(() => {
-    fetch("http://localhost:3000/posts")
+    fetch("https://json-template-kim.herokuapp.com/posts")
       .then((response) => response.json())
       .then((data) => setPosts(data));
   }, []);

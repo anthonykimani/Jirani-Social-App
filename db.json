@@ -1,20 +1,4 @@
 {
-  "stories": [
-    {},
-    {
-      "image": "../images/close-up-picnic-near-eiffel-tower.jpg",
-      "alt": "picnic in france"
-    },
-    {
-      "image": "../images/profile.jpg",
-      "alt": "profile pic"
-    },
-    {},
-    {
-      "image": "../images/young-woman-wearing-orange-dress-with-turban-ethnic-jewelry.jpg",
-      "alt": "young woman"
-    }
-  ],
   "messages": [
     {
       "name": "Sheila Nyambura",
@@ -22,7 +6,7 @@
     },
     {
       "name": "Donis Mweu",
-      "message": "Hey Bro, I deleted the Database!"
+      "message": "Hey Bro, I deleted the Database!🤦🏾‍♂️"
     },
     {
       "name": "Amos John",
@@ -31,6 +15,26 @@
     {
       "name": "Wairimu Shiro",
       "message": "Please check the Designs I sent"
+    },
+    {
+      "name":"Brian Wandego",
+      "message":"My team just got assigned an epic(collection of tasks) that once done(in three months), is going to earn the company half a Billion dollars a year!😳🤌🏾"
+    },
+    {
+      "name":"Johnathan Kemboi",
+      "message":"As a programmer, too bad you've never been one, there's only so much one can do 😂"
+    },
+    {
+      "name":"Muthoni Wandia",
+      "message":"Horizon Contact Centres manenos.  I pulled this stunt and I was fired on the spot 😂😂"
+    },
+    {
+      "name":"Jessy Lesley",
+      "message":"Wait... What? 😂😂🤦🏾‍♂️"
+    },
+    {
+      "name":"Ronen Hunter",
+      "message":"Turns out it’s possible to implement TypeScript’s type system in TypeScript’s type system 😳"
     }
   ],
   "posts": [
@@ -44,10 +48,10 @@
       "likes": 26,
       "commentList": [
         {
-          "comment": "Looking great"
+          "comment": "This is one place I'd definitely like to be in🥺"
         },
         {
-          "comment": "Wow I like the view"
+          "comment": "Beautiful 😍"
         },
         {
           "comment": "Haha , that was fun"
@@ -58,7 +62,7 @@
       "name": "Brian Wandego",
       "location": "Arusha",
       "profile": "/close-up-model-wearing-make-up.jpg",
-      "image": "/close-up-picnic-near-eiffel-tower.jpg",
+      "image": "https://img.freepik.com/free-photo/african-american-family-having-fun-enjoying-day-park-while-taking-selfie-together-with-mobile-phone_58466-15884.jpg?w=740&t=st=1659023207~exp=1659023807~hmac=41bc480981689ee2f3f76c7da4e32e9bd5f38d3cb5a0f098560c15c73c2b8184",
       "alt": "model with make up",
       "time": "6mins ago",
       "likes": 40,
@@ -67,7 +71,127 @@
           "comment": "What a Sunset"
         },
         {
-          "comment": "On my bucket list"
+          "comment": "I am still dealing with my phobia for water 🌊"
+        },
+        {
+          "comment": "I need this"
+        }
+      ]
+    },
+    {
+      "name": "Brian Wandego",
+      "location": "Arusha",
+      "profile": "/close-up-model-wearing-make-up.jpg",
+      "image": "https://img.freepik.com/free-photo/girls-stylish-street-clothes-sincerely-laugh-each-other-s-jokes-girlfriends-happily-pose-common-photo_197531-10043.jpg?w=740&t=st=1659023212~exp=1659023812~hmac=f417fbe3d4ea52ad6a43f494c5cab23284b733d104e212324f9ca9d929a685b7",
+      "alt": "model with make up",
+      "time": "6mins ago",
+      "likes": 40,
+      "commentList": [
+        {
+          "comment": "What a Sunset"
+        },
+        {
+          "comment": "I am still dealing with my phobia for water 🌊"
+        },
+        {
+          "comment": "I need this"
+        }
+      ]
+    },
+    {
+      "name": "Brian Wandego",
+      "location": "Arusha",
+      "profile": "/close-up-model-wearing-make-up.jpg",
+      "image": "https://img.freepik.com/free-photo/woman-drinking-cocktail-beach-bar_342744-544.jpg?w=740&t=st=1659023697~exp=1659024297~hmac=e39008c4b1abd7c2cace287a3515639c1c8a4137400c85c8c78134d64dfa355a",
+      "alt": "model with make up",
+      "time": "6mins ago",
+      "likes": 40,
+      "commentList": [
+        {
+          "comment": "What a Sunset"
+        },
+        {
+          "comment": "I am still dealing with my phobia for water 🌊"
+        },
+        {
+          "comment": "I need this"
+        }
+      ]
+    },
+    {
+      "name": "Brian Wandego",
+      "location": "Arusha",
+      "profile": "/close-up-model-wearing-make-up.jpg",
+      "image": "https://img.freepik.com/free-photo/black-woman-man-have-informal-meeting-glad-view-photos-smart-phone-wear-spectacles-work-together-common-project-via-laptop-computer_273609-3675.jpg?w=740&t=st=1659023220~exp=1659023820~hmac=6c3fe6e9ebe7e5a8c6204c2c2031194a3f027ddeb935e7f6dc3baa9bc4a29773",
+      "alt": "model with make up",
+      "time": "6mins ago",
+      "likes": 40,
+      "commentList": [
+        {
+          "comment": "What a Sunset"
+        },
+        {
+          "comment": "I am still dealing with my phobia for water 🌊"
+        },
+        {
+          "comment": "I need this"
+        }
+      ]
+    },
+    {
+      "name": "Brian Wandego",
+      "location": "Arusha",
+      "profile": "/close-up-model-wearing-make-up.jpg",
+      "image": "https://img.freepik.com/free-photo/multiracial-group-five-friends-having-coffee-together_1139-1024.jpg?w=740&t=st=1659023225~exp=1659023825~hmac=cf75c2c70d00751c732d64c39630703ebbfd7644763adf8edb9dd4d6a513fab9",
+      "alt": "model with make up",
+      "time": "6mins ago",
+      "likes": 40,
+      "commentList": [
+        {
+          "comment": "What a Sunset"
+        },
+        {
+          "comment": "I am still dealing with my phobia for water 🌊"
+        },
+        {
+          "comment": "I need this"
+        }
+      ]
+    },
+    {
+      "name": "Brian Wandego",
+      "location": "Arusha",
+      "profile": "/close-up-model-wearing-make-up.jpg",
+      "image": "https://img.freepik.com/free-photo/silhouette-group-people-have-fun-top-mountain-near-tent-during-sunset_146671-18472.jpg?w=740&t=st=1659023230~exp=1659023830~hmac=049549b27e52fc4350cde29f8fc04f6b1ccd90caef0eed4f036582210b314213",
+      "alt": "model with make up",
+      "time": "6mins ago",
+      "likes": 40,
+      "commentList": [
+        {
+          "comment": "What a Sunset"
+        },
+        {
+          "comment": "I am still dealing with my phobia for water 🌊"
+        },
+        {
+          "comment": "I need this"
+        }
+      ]
+    },
+    {
+      "name": "Brian Wandego",
+      "location": "Arusha",
+      "profile": "/close-up-model-wearing-make-up.jpg",
+      "image": "https://img.freepik.com/free-photo/african-american-family-having-fun-enjoying-day-park-while-taking-selfie-together-with-mobile-phone_58466-15883.jpg?w=740&t=st=1659023241~exp=1659023841~hmac=b327b2e0d42ee7515656c3fead3e25b55bf68b6f05eb010e54cd7e31cefe7d30",
+      "alt": "model with make up",
+      "time": "6mins ago",
+      "likes": 40,
+      "commentList": [
+        {
+          "comment": "What a Sunset"
+        },
+        {
+          "comment": "I am still dealing with my phobia for water 🌊"
         },
         {
           "comment": "I need this"
@@ -75,46 +199,29 @@
       ]
     }
   ],
-  "comments": [
-    {
-      "comment": "Is that a guitar",
-      "id": 1
-    }
-  ],
+  "comments": [],
   "addpost": [],
   "friends": [
     {
-      "name": "Amos John",
-      "status": true,
-      "mutuals": 32,
-      "id": 1
-    },
-    {
-      "name": "Joseph Prea",
-      "status": true,
-      "mutuals": 21,
-      "id": 2
-    },
-    {
-      "name": "Amos John",
+      "name": "Mohamed Rasheed",
       "status": true,
       "mutuals": 52,
       "id": 3
     },
     {
-      "name": "Amos John",
+      "name": "Karen Rono",
       "status": true,
       "mutuals": 10,
       "id": 4
     },
     {
-      "name": "Amos John",
+      "name": "Sangula Kipchumba",
       "status": true,
       "mutuals": 12,
       "id": 5
     },
     {
-      "name": "Amos John",
+      "name": "Korir John",
       "status": true,
       "mutuals": 32,
       "id": 6
@@ -126,25 +233,25 @@
       "id": 7
     },
     {
-      "name": "Amos John",
+      "name": "samuel ngugi",
       "status": true,
       "mutuals": 54,
       "id": 8
     },
     {
-      "name": "Amos John",
+      "name": "Stephen bephen",
       "status": true,
       "mutuals": 36,
       "id": 9
     },
     {
-      "name": "Amos John",
+      "name": "Hathim Ibrahim",
       "status": true,
       "mutuals": 33,
       "id": 10
     },
     {
-      "name": "Amos John",
+      "name": "C.K_Githacuri",
       "status": true,
       "mutuals": 32,
       "id": 11
@@ -156,7 +263,7 @@
       "id": 12
     },
     {
-      "name": "Amos John",
+      "name": "Masenge Nelson",
       "status": true,
       "mutuals": 32,
       "id": 13
@@ -182,19 +289,25 @@
   ],
   "requests": [
     {
-      "name": "Amos John",
+      "name": "samuel ngugi",
+      "status": true,
+      "mutuals": 54,
+      "id": 8
+    },
+    {
+      "name": "Stephen bephen",
       "status": true,
       "mutuals": 36,
       "id": 9
     },
     {
-      "name": "Amos John",
+      "name": "Hathim Ibrahim",
       "status": true,
       "mutuals": 33,
       "id": 10
     },
     {
-      "name": "Amos John",
+      "name": "C.K_Githacuri",
       "status": true,
       "mutuals": 32,
       "id": 11
@@ -206,7 +319,7 @@
       "id": 12
     },
     {
-      "name": "Amos John",
+      "name": "Masenge Nelson",
       "status": true,
       "mutuals": 32,
       "id": 13
@@ -274,6 +387,54 @@
       "shares": 12,
       "comments": [
         {
+          "commenter": "",
+          "comment": "I know this is a series, but I love it too much not to share: Band of Brothers."
+        },
+        {
+          "commenter": "Victoria Saha",
+          "comment": "The ending is totally unexpected Best survival movie Movie story is slow"
+        },
+        {
+          "commenter": "Dennis Shakav",
+          "comment": "Tom Cruise Stunt and fighting are realistic AF change my mind Gray man hand to hand combat were so corny"
+        }
+      ]
+    },
+    {
+      "topic": "news",
+      "image": "https://img.freepik.com/free-photo/front-view-man-with-beard-posing_23-2149438512.jpg?w=360&t=st=1659022633~exp=1659023233~hmac=fe372a5f8db7e4b9e020135c8e14cb62592d4b5f945f8e69e8cfd3122c8dfcf3",
+      "post": "Coverage of breaking stories, national and world news, politics, business, science, technology, and extended coverage of major national and world events.",
+      "name": "Donis Mweu",
+      "time": "25 mins ago",
+      "likes": 32,
+      "commentNumber": 21,
+      "shares": 12,
+      "comments": [
+        {
+          "commenter": "james baldwin",
+          "comment": "I know this is a series, but I love it too much not to share: Band of Brothers."
+        },
+        {
+          "commenter": "Victoria Saha",
+          "comment": "The ending is totally unexpected Best survival movie Movie story is slow"
+        },
+        {
+          "commenter": "Dennis Shakav",
+          "comment": "Tom Cruise Stunt and fighting are realistic AF change my mind Gray man hand to hand combat were so corny"
+        }
+      ]
+    },
+    {
+      "topic": "movies",
+      "image": "https://img.freepik.com/free-photo/portrait-young-male-priest_23-2149298354.jpg?w=360&t=st=1659022756~exp=1659023356~hmac=89b6ab72e4cb708d994361a5942249ac210dcefbc14d25bde4294a4629efd6bd",
+      "post": "Given the sheer amount of passion and care that Ryan Coogler put into Black Panther, there was no way his follow-up, Black Panther: Wakanda Forever wouldn't promise the same – and possibly more.",
+      "name": "Donis Mweu",
+      "time": "25 mins ago",
+      "likes": 32,
+      "commentNumber": 21,
+      "shares": 12,
+      "comments": [
+        {
           "commenter": "Anna chopra",
           "comment": "I know this is a series, but I love it too much not to share: Band of Brothers."
         },
@@ -289,7 +450,79 @@
     },
     {
       "topic": "movies",
-      "image": "",
+      "image": "https://img.freepik.com/premium-photo/portrait-beautiful-young-african-woman-black-background_219728-4270.jpg?w=740",
+      "post": "Nature is healing. How do we know? Because Saturday saw Kevin Feige and some of his amazing friends return to Hall H at the San Diego Comic-Con to announce a ton of exciting news about the future of the MCU, including the first trailer for Black Panther: Wakanda Forever, an 18-episode Disney+ series for Charlie Cox's Daredevil and not one, but two Avengers movies, due to be released just six months apart in 2025.",
+      "name": "Donis Mweu",
+      "time": "25 mins ago",
+      "likes": 32,
+      "commentNumber": 21,
+      "shares": 12,
+      "comments": [
+        {
+          "commenter": "Anna chopra",
+          "comment": "I know this is a series, but I love it too much not to share: Band of Brothers."
+        },
+        {
+          "commenter": "Victoria Saha",
+          "comment": "The ending is totally unexpected Best survival movie Movie story is slow"
+        },
+        {
+          "commenter": "Dennis Shakav",
+          "comment": "Tom Cruise Stunt and fighting are realistic AF change my mind Gray man hand to hand combat were so corny"
+        }
+      ]
+    },
+    {
+      "topic": "movies",
+      "image": "https://img.freepik.com/free-photo/smiling-portrait-young-businessman-with-hands-his-pocket-looking-camera_23-2148190702.jpg?w=740&t=st=1659022987~exp=1659023587~hmac=a18e4e28ab79290461efb21b446f13db0100bd598db221d4c3625bbd1a34cc61",
+      "post": "Game Of Thrones prequel House Of The Dragon is headed our way next month, and will be bringing its scaly, family infighting wares to Comic-Con this weekend. Ahead of the genre news-stuffed next few days, though, the Dragon team is looking to generate some extra buzz with a new trailer.",
+      "name": "Donis Mweu",
+      "time": "25 mins ago",
+      "likes": 32,
+      "commentNumber": 21,
+      "shares": 12,
+      "comments": [
+        {
+          "commenter": "Anna chopra",
+          "comment": "I know this is a series, but I love it too much not to share: Band of Brothers."
+        },
+        {
+          "commenter": "Victoria Saha",
+          "comment": "The ending is totally unexpected Best survival movie Movie story is slow"
+        },
+        {
+          "commenter": "Dennis Shakav",
+          "comment": "Tom Cruise Stunt and fighting are realistic AF change my mind Gray man hand to hand combat were so corny"
+        }
+      ]
+    },
+    {
+      "topic": "movies",
+      "image": "https://img.freepik.com/free-photo/surprised-playful-touched-good-looking-african-american-woman-glasses-stylish-brown-t-shirt-clasping-hands-smiling-from-joy-excitement-liking-great-show_176420-23322.jpg?w=740&t=st=1659023008~exp=1659023608~hmac=f653c600e147b4423d07af5ea79c7adb4d69e1cb325e0424cd5854a37cc10198",
+      "post": "The Vampire Diaries is always my favorite but I never get to watch it anymore because I don't have Netflix but I'm definitely going to watch it again when I have Netflix.",
+      "name": "Donis Mweu",
+      "time": "25 mins ago",
+      "likes": 32,
+      "commentNumber": 21,
+      "shares": 12,
+      "comments": [
+        {
+          "commenter": "Anna chopra",
+          "comment": "I know this is a series, but I love it too much not to share: Band of Brothers."
+        },
+        {
+          "commenter": "Victoria Saha",
+          "comment": "The ending is totally unexpected Best survival movie Movie story is slow"
+        },
+        {
+          "commenter": "Dennis Shakav",
+          "comment": "Tom Cruise Stunt and fighting are realistic AF change my mind Gray man hand to hand combat were so corny"
+        }
+      ]
+    },
+    {
+      "topic": "movies",
+      "image": "https://img.freepik.com/free-photo/cheerful-teenager-with-toothy-smile-afro-hairstyle-holds-modern-cell-phone-chats-online-with-boyfriend_273609-30470.jpg?w=740&t=st=1659023040~exp=1659023640~hmac=8efd34225861cfbb627dc3d511cfe17f2a5833ca183d710a39ab0eb9c2ebe01d",
       "post": "The Vampire Diaries is always my favorite but I never get to watch it anymore because I don't have Netflix but I'm definitely going to watch it again when I have Netflix.",
       "name": "Donis Mweu",
       "time": "25 mins ago",
@@ -337,7 +570,7 @@
     },
     {
       "topic": "movies",
-      "image": "",
+      "image": "https://img.freepik.com/free-photo/portrait-african-american-man_23-2149072214.jpg?w=740&t=st=1659023048~exp=1659023648~hmac=2ad3fbdc80255981bff25f5382e75d650f15ce920feeea7db1af5196acec00ff",
       "post": "The Vampire Diaries is always my favorite but I never get to watch it anymore because I don't have Netflix but I'm definitely going to watch it again when I have Netflix.",
       "name": "Donis Mweu",
       "time": "25 mins ago",
@@ -361,127 +594,7 @@
     },
     {
       "topic": "movies",
-      "image": "",
-      "post": "The Vampire Diaries is always my favorite but I never get to watch it anymore because I don't have Netflix but I'm definitely going to watch it again when I have Netflix.",
-      "name": "Donis Mweu",
-      "time": "25 mins ago",
-      "likes": 32,
-      "commentNumber": 21,
-      "shares": 12,
-      "comments": [
-        {
-          "commenter": "Anna chopra",
-          "comment": "I know this is a series, but I love it too much not to share: Band of Brothers."
-        },
-        {
-          "commenter": "Victoria Saha",
-          "comment": "The ending is totally unexpected Best survival movie Movie story is slow"
-        },
-        {
-          "commenter": "Dennis Shakav",
-          "comment": "Tom Cruise Stunt and fighting are realistic AF change my mind Gray man hand to hand combat were so corny"
-        }
-      ]
-    },
-    {
-      "topic": "movies",
-      "image": "",
-      "post": "The Vampire Diaries is always my favorite but I never get to watch it anymore because I don't have Netflix but I'm definitely going to watch it again when I have Netflix.",
-      "name": "Donis Mweu",
-      "time": "25 mins ago",
-      "likes": 32,
-      "commentNumber": 21,
-      "shares": 12,
-      "comments": [
-        {
-          "commenter": "Anna chopra",
-          "comment": "I know this is a series, but I love it too much not to share: Band of Brothers."
-        },
-        {
-          "commenter": "Victoria Saha",
-          "comment": "The ending is totally unexpected Best survival movie Movie story is slow"
-        },
-        {
-          "commenter": "Dennis Shakav",
-          "comment": "Tom Cruise Stunt and fighting are realistic AF change my mind Gray man hand to hand combat were so corny"
-        }
-      ]
-    },
-    {
-      "topic": "movies",
-      "image": "",
-      "post": "The Vampire Diaries is always my favorite but I never get to watch it anymore because I don't have Netflix but I'm definitely going to watch it again when I have Netflix.",
-      "name": "Donis Mweu",
-      "time": "25 mins ago",
-      "likes": 32,
-      "commentNumber": 21,
-      "shares": 12,
-      "comments": [
-        {
-          "commenter": "Anna chopra",
-          "comment": "I know this is a series, but I love it too much not to share: Band of Brothers."
-        },
-        {
-          "commenter": "Victoria Saha",
-          "comment": "The ending is totally unexpected Best survival movie Movie story is slow"
-        },
-        {
-          "commenter": "Dennis Shakav",
-          "comment": "Tom Cruise Stunt and fighting are realistic AF change my mind Gray man hand to hand combat were so corny"
-        }
-      ]
-    },
-    {
-      "topic": "movies",
-      "image": "",
-      "post": "The Vampire Diaries is always my favorite but I never get to watch it anymore because I don't have Netflix but I'm definitely going to watch it again when I have Netflix.",
-      "name": "Donis Mweu",
-      "time": "25 mins ago",
-      "likes": 32,
-      "commentNumber": 21,
-      "shares": 12,
-      "comments": [
-        {
-          "commenter": "Anna chopra",
-          "comment": "I know this is a series, but I love it too much not to share: Band of Brothers."
-        },
-        {
-          "commenter": "Victoria Saha",
-          "comment": "The ending is totally unexpected Best survival movie Movie story is slow"
-        },
-        {
-          "commenter": "Dennis Shakav",
-          "comment": "Tom Cruise Stunt and fighting are realistic AF change my mind Gray man hand to hand combat were so corny"
-        }
-      ]
-    },
-    {
-      "topic": "movies",
-      "image": "",
-      "post": "The Vampire Diaries is always my favorite but I never get to watch it anymore because I don't have Netflix but I'm definitely going to watch it again when I have Netflix.",
-      "name": "Donis Mweu",
-      "time": "25 mins ago",
-      "likes": 32,
-      "commentNumber": 21,
-      "shares": 12,
-      "comments": [
-        {
-          "commenter": "Anna chopra",
-          "comment": "I know this is a series, but I love it too much not to share: Band of Brothers."
-        },
-        {
-          "commenter": "Victoria Saha",
-          "comment": "The ending is totally unexpected Best survival movie Movie story is slow"
-        },
-        {
-          "commenter": "Dennis Shakav",
-          "comment": "Tom Cruise Stunt and fighting are realistic AF change my mind Gray man hand to hand combat were so corny"
-        }
-      ]
-    },
-    {
-      "topic": "movies",
-      "image": "",
+      "image": "https://img.freepik.com/free-photo/portrait-african-american-man_23-2149072214.jpg?w=740&t=st=1659023048~exp=1659023648~hmac=2ad3fbdc80255981bff25f5382e75d650f15ce920feeea7db1af5196acec00ff",
       "post": "The Vampire Diaries is always my favorite but I never get to watch it anymore because I don't have Netflix but I'm definitely going to watch it again when I have Netflix.",
       "name": "Donis Mweu",
       "time": "25 mins ago",
