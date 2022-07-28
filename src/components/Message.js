@@ -1,9 +1,9 @@
-import profilePic from "../images/profile.jpg";
+// import profilePic from "../images/profile.jpg";
 
 const Message = ({ message }) => {
   return (
     <div className="message">
-      <img src={profilePic} alt="" />
+      <img src={process.env.PUBLIC_URL + "/profile.jpg"} alt="" />
       <div className="message-text">
         <h4>{message.name}</h4>
         <p>{message.message}</p>

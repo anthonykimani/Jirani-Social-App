@@ -1,4 +1,4 @@
-import profilePic from "../images/profile.jpg";
+// import profilePic from "../images/profile.jpg";
 
 const Navbar = ({ darkMode, isDarkMode }) => {
   return (
@@ -36,7 +36,7 @@ const Navbar = ({ darkMode, isDarkMode }) => {
           }
         ></i>
         <button className="create-button">Create</button>
-        <img src={profilePic} alt="" />
+        <img src={process.env.PUBLIC_URL + "/profile.jpg"} alt="" />
       </div>
     </div>
   );

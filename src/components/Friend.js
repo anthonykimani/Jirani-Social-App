@@ -1,11 +1,11 @@
-import profilePic from '../images/profile.jpg'
+// import profilePic from '../images/profile.jpg'
 
 const Friend = ({ isDarkMode,element,removeFriend }) => {
   return (
     <div className="friend-container">
       <div className="friend-header">
         <div className="friend-text">
-        <img src={profilePic} alt="" />
+        <img src={process.env.PUBLIC_URL + "/profile.jpg"} alt="" />
           <h4>{element.name}</h4>
         </div>
           <p>{element.mutuals} mutual friends</p>

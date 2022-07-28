@@ -1,13 +1,16 @@
-import blackModel from "../images/close-up-model-wearing-make-up.jpg";
-import effielTower from "../images/close-up-picnic-near-eiffel-tower.jpg";
-import summer from "../images/summer-time-beach-night.jpg";
-import blackLady from "../images/young-woman-wearing-orange-dress-with-turban-ethnic-jewelry.jpg";
+// import blackModel from "../images/close-up-model-wearing-make-up.jpg";
+// import effielTower from "../images/close-up-picnic-near-eiffel-tower.jpg";
+// import summer from "../images/summer-time-beach-night.jpg";
+// import blackLady from "../images/young-woman-wearing-orange-dress-with-turban-ethnic-jewelry.jpg";
 import React, { useState, useEffect } from "react";
 
 const Posts = ({ posts, isDarkMode }) => {
   const [comments, setComments] = useState("");
   const [newComment, setNewComment] = useState("");
   const [liked, setLiked] = useState(false);
+
+
+  const altText = posts.alt
 
   const handleLike = () => {
     setLiked(!liked);
@@ -42,7 +45,7 @@ const Posts = ({ posts, isDarkMode }) => {
     >
       <div className="post-header">
         <div className="post-header-profile">
-          <img src={blackLady} alt="" />
+          <img src={process.env.PUBLIC_URL + posts.profile} alt={altText} />
           <div>
             <h3>{posts.name}</h3>
             <div>
@@ -56,7 +59,7 @@ const Posts = ({ posts, isDarkMode }) => {
         </div>
       </div>
       <div className="post-image">
-        <img src={summer} alt="" />
+        <img src={process.env.PUBLIC_URL + posts.image} alt={altText} />
       </div>
       <div className="post-icons">
         <div className="post-icons-left">
@@ -75,9 +78,9 @@ const Posts = ({ posts, isDarkMode }) => {
       <div className="post-icons-paragraph-text">
         <div className="post-icons-likes">
           <div className="post-likes-img">
-            <img src={blackModel} alt="" />
-            <img src={blackLady} alt="" />
-            <img src={effielTower} alt="" />
+            <img src={process.env.PUBLIC_URL + posts.image} alt={altText} />
+            <img src={process.env.PUBLIC_URL + posts.image} alt={altText} />
+            <img src={process.env.PUBLIC_URL + posts.image} alt={altText} />
           </div>
           <div className="post-likes-text">
             <p>{posts.likes} Likes</p>

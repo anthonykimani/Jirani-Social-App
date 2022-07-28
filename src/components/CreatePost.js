@@ -1,4 +1,4 @@
-import profilePic from "../images/profile.jpg";
+// import profilePic from "..public/images/profile.jpg";
 import React, { useState, useEffect } from "react";
 
 const CreatePost = ({ addPost, isDarkMode }) => {
@@ -27,7 +27,7 @@ const CreatePost = ({ addPost, isDarkMode }) => {
           : { backgroundColor: "var(--bg-light-color" }
       }
     >
-      <img src={profilePic} alt="" />
+      <img src={process.env.PUBLIC_URL + "/profile.jpg"} alt="" />
       <form onSubmit={handleSubmit} className="form-container">
         <input
           type="text"

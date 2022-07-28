@@ -1,8 +1,6 @@
 {
   "stories": [
     {
-      "image": "../src/images/close-up-model-wearing-make-up.jpg",
-      "alt": "model with make up"
     },
     {
       "image": "../images/close-up-picnic-near-eiffel-tower.jpg",
@@ -13,8 +11,6 @@
       "alt": "profile pic"
     },
     {
-      "image": "../images/summer-time-beach-night.jpg",
-      "alt": "summer time"
     },
     {
       "image": "../images/young-woman-wearing-orange-dress-with-turban-ethnic-jewelry.jpg",
@@ -43,6 +39,9 @@
     {
       "name": "John Kamau",
       "location": "Nairobi",
+      "profile":"/young-woman-wearing-orange-dress-with-turban-ethnic-jewelry.jpg",
+      "image": "/summer-time-beach-night.jpg",
+      "alt": "summer time",
       "time": "16mins ago",
       "likes": 26,
       "comments": [
@@ -60,6 +59,9 @@
     {
       "name": "Brian Wandego",
       "location": "Arusha",
+      "profile":"/close-up-model-wearing-make-up.jpg",
+      "image": "/close-up-picnic-near-eiffel-tower.jpg",
+      "alt": "model with make up",
       "time": "6mins ago",
       "likes": 40,
       "comments": [
