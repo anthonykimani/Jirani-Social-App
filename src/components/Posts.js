@@ -43,7 +43,10 @@ const Posts = ({ posts, isDarkMode }) => {
   },[comments])
 
   const postedComment = postComment.map((element,index)=>(
-    <h3>{element.comment}</h3>
+    <div className="post-user-comments">
+      <i class="bx bxs-user-circle bx-md"></i>
+      <h3>{element.comment}</h3>
+    </div>
   ))
 
   const handleExpand = ()=>{
@@ -102,26 +105,37 @@ const Posts = ({ posts, isDarkMode }) => {
             <p>{posts.likes} Likes</p>
           </div>
         </div>
-        <div className="post-comments-container">
-          <div className="post-comments">
+        <div className="post-comments-container" style={
+        isDarkMode
+          ? { backgroundColor: "var(--bg-dark-color)",color:"var(--bg-light-color)" }
+          : { backgroundColor: "var(--bg-light-color",color:"var(--bg-dark-color)" }
+      }>
+          <div className="post-comments" style={
+        isDarkMode
+          ? { backgroundColor: "var(--bg-dark-color)",color:"var(--bg-light-color)" }
+          : { backgroundColor: "var(--bg-grey-color",color:"var(--bg-dark-color)" }
+      }>
             {posts.commentList.map((element, index) => (
-              <h3>{element.comment}</h3>
+              <div className="posted-user-comments">
+                <i class="bx bxs-user-circle bx-md"></i>
+                <h3>{element.comment}</h3>
+              </div>
               ))}
               {postedComment}
           </div>
           <div className="post-add-comments">
             <form onSubmit={handleSubmit} style={
         isDarkMode
-          ? { backgroundColor: "var(--bg-dark-color)" }
-          : { backgroundColor: "var(--bg-light-color" }
+          ? { backgroundColor: "var(--bg-dark-color)",color:"var(--bg-light-color)" }
+          : { backgroundColor: "var(--bg-light-color",color:"var(--bg-dark-color)" }
       }>
               <input
                 type="text"
                 className="comment"
                 style={
                   isDarkMode
-                    ? { backgroundColor: "var(--bg-dark-color)" }
-                    : { backgroundColor: "var(--bg-light-color" }
+                    ? { backgroundColor: "var(--bg-dark-color)",color:"var(--bg-light-color)" }
+                    : { backgroundColor: "var(--bg-light-color",color:"var(--bg-dark-color)" }
                 }
                 placeholder="Add comment"
                 name="comment"

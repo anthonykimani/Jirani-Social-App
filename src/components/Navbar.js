@@ -1,4 +1,5 @@
 // import profilePic from "../images/profile.jpg";
+import { Link } from "react-router-dom";
 
 const Navbar = ({ darkMode, isDarkMode }) => {
   return (
@@ -6,11 +7,12 @@ const Navbar = ({ darkMode, isDarkMode }) => {
       className="navbar-container"
       style={
         isDarkMode
-          ? { backgroundColor: "var(--bg-dark-color)" }
+          ? { backgroundColor: "var(--bg-dark-color)",color:"white" }
           : { backgroundColor: "var(--bg-light-color" }
       }
     >
       <div className="logo-container">
+        <img src={process.env.PUBLIC_URL + "/email.png"} alt="" />
         <h2
           style={
             isDarkMode
@@ -18,7 +20,14 @@ const Navbar = ({ darkMode, isDarkMode }) => {
               : { color: "var(--bg-dark-color" }
           }
         >
-          Jirani Connect
+          <Link
+            to={"/"}
+            className="link"
+            style={{ textDecoration: 'none' ,
+          color:'var(--brand-color)'}}
+          >
+            Jirani Connect
+          </Link>
         </h2>
       </div>
       <div className="search-bar-container">
@@ -35,7 +44,6 @@ const Navbar = ({ darkMode, isDarkMode }) => {
               : { color: "var(--bg-dark-color" }
           }
         ></i>
-        <button className="create-button">Create</button>
         <img src={process.env.PUBLIC_URL + "/profile.jpg"} alt="" />
       </div>
     </div>

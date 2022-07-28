@@ -6,40 +6,51 @@ const Trending = ({ darkMode, isDarkMode }) => {
   const [trending, setTrending] = useState([]);
 
   const trends = trending.map((element, index) => (
-    <div className="trends-container" style={
+    <div
+      className="trends-container"
+      style={
         isDarkMode
-          ? { backgroundColor: "var(--bg-dark-color)", color:"var(--)" }
+          ? {
+              backgroundColor: "var(--bg-dark-color)",
+              color: "var(--bg-light-color)",
+            }
           : { backgroundColor: "var(--bg-light-color" }
-      }>
-      <div className="trends-header">
-        <img src="" alt="" />
-        <div className="trends-header-text">
-          <h4>{element.topic}</h4>
-          <p>{element.name}</p>
+      }
+    >
+      <div className="trends-inner-container">
+        <div className="trends-header">
+          <img src={process.env.PUBLIC_URL + element.image} alt="" />
+          <div className="trends-header-text">
+            <h2>{element.topic}</h2>
+            <p>{element.name}</p>
+          </div>
+          <i className="bx bx-dots-horizontal-rounded bx-sm"></i>
         </div>
-      </div>
-      <div className="trends-body">
-        <h3>{element.post}</h3>
-      </div>
-      <div className="trends-icons">
-        <div className="trends-icons-left">
-          <h5>{element.likes}</h5>
+        <div className="trends-body">
+          <h2>"{element.post}"</h2>
         </div>
-        <div className="trends-icons-right">
-          <h5>{element.commentNumber}</h5>
-          <h5>{element.shares}</h5>
+        <div className="trends-icons">
+          <div className="trends-icons-left">
+            <i className="bx bxs-heart bx-md"></i>
+            <h3>{element.likes} Likes</h3>
+          </div>
+          <div className="trends-icons-right">
+            <h3>{element.commentNumber} Comments</h3>
+            <h3>{element.shares} Shares</h3>
+          </div>
         </div>
-      </div>
-      <div className="trends-footer"></div>
-      <div className="comment-bar">
-        <form>
-          <input type="text" />
-          <input type="submit" value="comment" />
-        </form>
-      </div>
-      <div className="comments">
-        <h4>{element.comments.commenter}</h4>
-        <p>{element.comments.comment}</p>
+        <div className="trends-footer">
+          <div className="comment-bar">
+            <form>
+              <input type="text" />
+              <input type="submit" value="comment" id="submit-button"/>
+            </form>
+          </div>
+          <div className="comments">
+            <h4>{element.comments.commenter}</h4>
+            <p>{element.comments.comment}</p>
+          </div>
+        </div>
       </div>
     </div>
   ));

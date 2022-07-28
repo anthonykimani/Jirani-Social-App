@@ -75,7 +75,12 @@
       ]
     }
   ],
-  "comments": [],
+  "comments": [
+    {
+      "comment": "Is that a guitar",
+      "id": 1
+    }
+  ],
   "addpost": [],
   "friends": [
     {
@@ -260,6 +265,7 @@
   "trending": [
     {
       "topic": "movies",
+      "image": "/young-woman-wearing-orange-dress-with-turban-ethnic-jewelry.jpg",
       "post": "The Vampire Diaries is always my favorite but I never get to watch it anymore because I don't have Netflix but I'm definitely going to watch it again when I have Netflix.",
       "name": "Donis Mweu",
       "time": "25 mins ago",
@@ -283,6 +289,7 @@
     },
     {
       "topic": "movies",
+      "image": "",
       "post": "The Vampire Diaries is always my favorite but I never get to watch it anymore because I don't have Netflix but I'm definitely going to watch it again when I have Netflix.",
       "name": "Donis Mweu",
       "time": "25 mins ago",
@@ -306,6 +313,7 @@
     },
     {
       "topic": "movies",
+      "image": "",
       "post": "The Vampire Diaries is always my favorite but I never get to watch it anymore because I don't have Netflix but I'm definitely going to watch it again when I have Netflix.",
       "name": "Donis Mweu",
       "time": "25 mins ago",
@@ -329,6 +337,7 @@
     },
     {
       "topic": "movies",
+      "image": "",
       "post": "The Vampire Diaries is always my favorite but I never get to watch it anymore because I don't have Netflix but I'm definitely going to watch it again when I have Netflix.",
       "name": "Donis Mweu",
       "time": "25 mins ago",
@@ -352,6 +361,7 @@
     },
     {
       "topic": "movies",
+      "image": "",
       "post": "The Vampire Diaries is always my favorite but I never get to watch it anymore because I don't have Netflix but I'm definitely going to watch it again when I have Netflix.",
       "name": "Donis Mweu",
       "time": "25 mins ago",
@@ -375,6 +385,7 @@
     },
     {
       "topic": "movies",
+      "image": "",
       "post": "The Vampire Diaries is always my favorite but I never get to watch it anymore because I don't have Netflix but I'm definitely going to watch it again when I have Netflix.",
       "name": "Donis Mweu",
       "time": "25 mins ago",
@@ -398,6 +409,7 @@
     },
     {
       "topic": "movies",
+      "image": "",
       "post": "The Vampire Diaries is always my favorite but I never get to watch it anymore because I don't have Netflix but I'm definitely going to watch it again when I have Netflix.",
       "name": "Donis Mweu",
       "time": "25 mins ago",
@@ -421,6 +433,7 @@
     },
     {
       "topic": "movies",
+      "image": "",
       "post": "The Vampire Diaries is always my favorite but I never get to watch it anymore because I don't have Netflix but I'm definitely going to watch it again when I have Netflix.",
       "name": "Donis Mweu",
       "time": "25 mins ago",
@@ -444,6 +457,7 @@
     },
     {
       "topic": "movies",
+      "image": "",
       "post": "The Vampire Diaries is always my favorite but I never get to watch it anymore because I don't have Netflix but I'm definitely going to watch it again when I have Netflix.",
       "name": "Donis Mweu",
       "time": "25 mins ago",
@@ -467,6 +481,7 @@
     },
     {
       "topic": "movies",
+      "image": "",
       "post": "The Vampire Diaries is always my favorite but I never get to watch it anymore because I don't have Netflix but I'm definitely going to watch it again when I have Netflix.",
       "name": "Donis Mweu",
       "time": "25 mins ago",
