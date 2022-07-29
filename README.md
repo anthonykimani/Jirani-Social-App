@@ -32,7 +32,7 @@ A User can switch between `Light and Dark mode`.
  
 ### Live Link
 
-- Click this link to view the live application [https://anthonykimani.github.io/Quick-Shopping-Store/]
+- Click this link to view the live application [http://jirani-social-app.vercel.app/]
 
 
 ### Technology  Used
