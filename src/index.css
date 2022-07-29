@@ -122,25 +122,21 @@ body {
 }
 /* HOME */
 .home-container {
-  /* display:flex;
-  justify-content: space-around; */
-  margin-top: 62px;
+  margin-top:120px;
 }
 
 /* MENU-CONTAINER-STYLES */
 .menu-container {
-  width: auto;
+  width:100vw;
   background-color: var(--bg-light-color);
-  /* border-radius: 15px; */
   overflow: hidden;
-  /* height:350px; */
+  position: fixed;
+  top:62px;
   margin-bottom: 2px;
 }
 
 .menu-container ul {
   display: flex;
-  /* flex-direction: column; */
-  /* align-items: center; */
   justify-content: space-around;
   flex-wrap: wrap;
 }
@@ -501,7 +497,7 @@ body {
 
 /* =======MESSAGING PAGE===== */
 .message-page-section {
-  margin-top: 62px;
+  margin-top: 122px;
 }
 
 /* TEXT */
@@ -545,7 +541,7 @@ body {
 
 /* FRIENDS PAGE */
 .friends-section {
-  margin-top: 62px;
+  margin-top: 122px;
 }
 
 .friends-container {
@@ -612,7 +608,7 @@ body {
 
 /* SETTINGS PAGE */
 .settings-section {
-  margin-top: 62px;
+  margin-top: 122px;
 }
 
 .setting-container {
@@ -653,7 +649,7 @@ body {
 /* TRENDING PAGE */
 
 .trending-section {
-  margin-top: 62px;
+  margin-top: 122px;
 }
 
 .trends-container {
@@ -731,16 +727,31 @@ body {
   align-items: center;
 }
 
-.comment-bar form input {
-  height: 30px;
+
+.input-bar{
+  height: 40px;
   margin: 0px 30px;
   width: 500px;
-  border: 0.5px solid var(--bg-grey-color);
+  border: 2px solid var(--bg-grey-color);
+  outline:none;
+  padding-left:10px;
+  font-size:var(--sm);
 }
 
 #submit-button {
+  background-color: var(--brand-color);
+  color:white;
+  font-size: var(--xm);
   height: 50px;
   width: 100px;
+  margin:20px;
+  outline:none;
+  border:none;
+}
+
+#submit-button:hover{
+  background-color: #112a46;
+  cursor:pointer;
 }
 
 /* RESPONSIVENESS */
@@ -883,7 +894,7 @@ body {
 }
 
 @media(max-width:415px){
-  
+
 }
 
 @media (max-width: 375px) {

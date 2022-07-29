@@ -6,8 +6,8 @@ const Home = ({ isDarkMode, darkMode,isOpen,handleOpenMenu }) => {
   return (
     <div>
       <Navbar darkMode={darkMode} isDarkMode={isDarkMode} handleOpenMenu={handleOpenMenu} />
-      <div className="home-container">
         <Menu isDarkMode={isDarkMode} isOpen={isOpen} />
+      <div className="home-container">
         <Timeline isDarkMode={isDarkMode} />
       </div>
     </div>

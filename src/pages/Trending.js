@@ -2,7 +2,7 @@ import Navbar from "../components/Navbar";
 import Menu from "../components/Menu";
 import React, { useState, useEffect } from "react";
 
-const Trending = ({ darkMode, isDarkMode,isOpen,handleOpenMenu }) => {
+const Trending = ({ darkMode, isDarkMode, isOpen, handleOpenMenu }) => {
   const [trending, setTrending] = useState([]);
 
   const trends = trending.map((element, index) => (
@@ -29,7 +29,18 @@ const Trending = ({ darkMode, isDarkMode,isOpen,handleOpenMenu }) => {
           <i className="bx bx-dots-horizontal-rounded bx-sm"></i>
         </div>
         <div className="trends-body">
-          <h2>"{element.post}"</h2>
+          <h2
+            style={
+              isDarkMode
+                ? {
+                    backgroundColor: "var(--bg-grey-color)",
+                    color: "var(--bg-dark-color)",
+                  }
+                : { backgroundColor: "var(--bg-light-color" }
+            }
+          >
+            "{element.post}"
+          </h2>
         </div>
         <div className="trends-icons">
           <div className="trends-icons-left">
@@ -44,8 +55,27 @@ const Trending = ({ darkMode, isDarkMode,isOpen,handleOpenMenu }) => {
         <div className="trends-footer">
           <div className="comment-bar">
             <form>
-              <input type="text" />
-              <input type="submit" value="comment" id="submit-button" />
+              <input
+                type="text"
+                placeholder="comment..."
+                className="input-bar"
+                style={
+                  isDarkMode
+                    ? {
+                        backgroundColor: "var(--bg-grey-color)",
+                        color: "var(--bg-dark-color)",
+                      }
+                    : { backgroundColor: "var(--bg-light-color" }
+                }
+              />
+              <input type="submit" value="comment" id="submit-button" style={
+                  isDarkMode
+                    ? {
+                        backgroundColor: "var(--bg-grey-color)",
+                        color: "var(--bg-dark-color)",
+                      }
+                    : { backgroundColor: "var(--brand-color" }
+                } />
             </form>
           </div>
           <div className="comments">
@@ -58,16 +88,20 @@ const Trending = ({ darkMode, isDarkMode,isOpen,handleOpenMenu }) => {
   ));
 
   useEffect(() => {
-    fetch("http://localhost:3000/trending")
+    fetch("https://json-template-kim.herokuapp.com/trending")
       .then((response) => response.json())
       .then((data) => setTrending(data));
   }, []);
 
   return (
     <div className="trending-container">
-      <Navbar darkMode={darkMode} isDarkMode={isDarkMode} handleOpenMenu={handleOpenMenu} />
+      <Navbar
+        darkMode={darkMode}
+        isDarkMode={isDarkMode}
+        handleOpenMenu={handleOpenMenu}
+      />
       <div className="trending-section">
-        <Menu isDarkMode={isDarkMode} isOpen={isOpen}  />
+        <Menu isDarkMode={isDarkMode} isOpen={isOpen} />
         {trends}
       </div>
     </div>

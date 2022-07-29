@@ -1,14 +1,21 @@
 // import profilePic from "public/images/profile.jpg";
 import React, { useState } from "react";
 
-const Text = ({ message }) => {
+const Text = ({ message,isDarkMode }) => {
   const [openMessage, setOpenMessage] = useState(false);
 
   const handleDisplay = () => {
     setOpenMessage(!openMessage);
   };
   return (
-    <div className="text" onClick={handleDisplay}>
+    <div className="text" onClick={handleDisplay} style={
+      isDarkMode
+        ? {
+            backgroundColor: "var(--bg-dark-color)",
+            color: "var(--bg-grey-color)",
+          }
+        : { backgroundColor: "var(--bg-light-color)" }
+    } >
       <img src={process.env.PUBLIC_URL + "/profile.jpg"} alt="" />
       <div
         className="text-text"
@@ -19,7 +26,7 @@ const Text = ({ message }) => {
                 backgroundColor: "var(--bg-grey-color)",
                 padding: "20px",
               }
-            : { display: "block" }
+            : { display: "block"}
         }
       >
         <h4>{message.name}</h4>

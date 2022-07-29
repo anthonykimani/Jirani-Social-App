@@ -7,13 +7,12 @@ import Settings from "../pages/Settings";
 import Trending from "../pages/Trending";
 
 const App = () => {
-  const [openMenu,setOpenMenu] = useState(true);
+  const [openMenu, setOpenMenu] = useState(true);
   const [isDarkMode, setIsDarkMode] = useState(false);
 
-  const handleOpenMenu = ()=>{
+  const handleOpenMenu = () => {
     setOpenMenu(!openMenu);
-  }
-
+  };
 
   const handleMode = () => {
     setIsDarkMode(!isDarkMode);
@@ -25,30 +24,58 @@ const App = () => {
         <Routes>
           <Route
             path="/"
-            element={<Home isDarkMode={isDarkMode} darkMode={handleMode} handleOpenMenu={handleOpenMenu} isOpen={openMenu
-            } />}
+            element={
+              <Home
+                isDarkMode={isDarkMode}
+                darkMode={handleMode}
+                handleOpenMenu={handleOpenMenu}
+                isOpen={openMenu}
+              />
+            }
           />
           <Route
             path="/messages"
             element={
-              <Messaging isDarkMode={isDarkMode} darkMode={handleMode} handleOpenMenu={handleOpenMenu} isOpen={openMenu
-              } />
+              <Messaging
+                isDarkMode={isDarkMode}
+                darkMode={handleMode}
+                handleOpenMenu={handleOpenMenu}
+                isOpen={openMenu}
+              />
             }
           />
           <Route
             path="/friends"
-            element={<Friends isDarkMode={isDarkMode} darkMode={handleMode} handleOpenMenu={handleOpenMenu} isOpen={openMenu
-            } />}
+            element={
+              <Friends
+                isDarkMode={isDarkMode}
+                darkMode={handleMode}
+                handleOpenMenu={handleOpenMenu}
+                isOpen={openMenu}
+              />
+            }
           />
           <Route
             path="/settings"
-            element={<Settings isDarkMode={isDarkMode} darkMode={handleMode} handleOpenMenu={handleOpenMenu} isOpen={openMenu
-            } />}
+            element={
+              <Settings
+                isDarkMode={isDarkMode}
+                darkMode={handleMode}
+                handleOpenMenu={handleOpenMenu}
+                isOpen={openMenu}
+              />
+            }
           />
           <Route
             path="/trending"
-            element={<Trending isDarkMode={isDarkMode} darkMode={handleMode} handleOpenMenu={handleOpenMenu} isOpen={openMenu
-            } />}
+            element={
+              <Trending
+                isDarkMode={isDarkMode}
+                darkMode={handleMode}
+                handleOpenMenu={handleOpenMenu}
+                isOpen={openMenu}
+              />
+            }
           />
         </Routes>
       </Router>
