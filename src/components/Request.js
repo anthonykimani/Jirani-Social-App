@@ -5,7 +5,7 @@ const Request = ({element,isDarkmode,acceptRequest}) => {
     <div className="friend-container">
       <div className="friend-header">
         <div className="friend-text">
-          <img src={process.env.PUBLIC_URL + "/profile.jpg"} alt="" />
+          <img src={process.env.PUBLIC_URL + element.image} alt="" />
           <h4>{element.name}</h4>
         </div>
         <p>{element.mutuals} mutual friends</p>
