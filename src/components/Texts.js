@@ -36,8 +36,8 @@ const Texts = ({ isDarkMode }) => {
           <p>General</p>
           <p>Requests</p>
         </div>
-        {message.map((element) => (
-          <Text message={element} isDarkMode={isDarkMode} />
+        {message.map((element,index) => (
+          <Text message={element} isDarkMode={isDarkMode} key={index} />
         ))}
       </div>
     </div>

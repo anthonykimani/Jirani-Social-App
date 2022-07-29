@@ -4,6 +4,11 @@ import React, { useState, useEffect } from "react";
 
 const Trending = ({ darkMode, isDarkMode, isOpen, handleOpenMenu }) => {
   const [trending, setTrending] = useState([]);
+  const [liked, setLiked] = useState(false);
+
+  const handleLike = () => {
+    setLiked(!liked);
+  };
 
   const trends = trending.map((element, index) => (
     <div
@@ -44,7 +49,11 @@ const Trending = ({ darkMode, isDarkMode, isOpen, handleOpenMenu }) => {
         </div>
         <div className="trends-icons">
           <div className="trends-icons-left">
-            <i className="bx bxs-heart bx-md"></i>
+            <i
+              className={liked ? "bx bxs-heart bx-md" : "bx bx-heart bx-md"}
+              onClick={handleLike}
+              style={liked ? { color: "red" } : { color: "black" }}
+            ></i>
             <h3>{element.likes} Likes</h3>
           </div>
           <div className="trends-icons-right">
@@ -68,14 +77,19 @@ const Trending = ({ darkMode, isDarkMode, isOpen, handleOpenMenu }) => {
                     : { backgroundColor: "var(--bg-light-color" }
                 }
               />
-              <input type="submit" value="comment" id="submit-button" style={
+              <input
+                type="submit"
+                value="comment"
+                id="submit-button"
+                style={
                   isDarkMode
                     ? {
                         backgroundColor: "var(--bg-grey-color)",
                         color: "var(--bg-dark-color)",
                       }
                     : { backgroundColor: "var(--brand-color" }
-                } />
+                }
+              />
             </form>
           </div>
           <div className="comments">

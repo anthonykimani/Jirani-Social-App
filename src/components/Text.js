@@ -16,7 +16,7 @@ const Text = ({ message,isDarkMode }) => {
           }
         : { backgroundColor: "var(--bg-light-color)" }
     } >
-      <img src={process.env.PUBLIC_URL + "/profile.jpg"} alt="" />
+      <img src={process.env.PUBLIC_URL + message.image} alt="" />
       <div
         className="text-text"
         style={

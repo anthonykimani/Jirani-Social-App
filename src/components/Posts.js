@@ -57,7 +57,7 @@ const Posts = ({ posts, isDarkMode }) => {
       className="posts-container"
       style={
         isDarkMode
-          ? { backgroundColor: "var(--bg-dark-color)",color: "white" }
+          ? { backgroundColor: "var(--bg-dark-color)", color: "white" }
           : { backgroundColor: "var(--bg-light-color" }
       }
     >
@@ -135,7 +135,7 @@ const Posts = ({ posts, isDarkMode }) => {
                     color: "var(--bg-light-color)",
                   }
                 : {
-                    backgroundColor: "var(--bg-grey-color",
+                    backgroundColor: "var(--bg-light-grey-color",
                     color: "var(--bg-dark-color)",
                   }
             }

@@ -59,9 +59,6 @@ const Timeline = ({ isDarkMode }) => {
         {posted}
         {timelinePosts}
       </div>
-      {/* <div className="timeline-right">
-        <Interactions isDarkMode={isDarkMode}/>
-      </div> */}
     </div>
   );
 };
