@@ -5,7 +5,7 @@ const Texts = ({ isDarkMode }) => {
   const [message, setMessage] = useState([]);
 
   useEffect(() => {
-    fetch("http://localhost:3000/messages")
+    fetch("https://json-template-kim.herokuapp.com/messages")
       .then((response) => response.json())
       .then((data) => setMessage(data));
   }, []);
