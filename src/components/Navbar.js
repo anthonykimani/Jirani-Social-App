@@ -48,7 +48,7 @@ const Navbar = ({ darkMode, isDarkMode, handleOpenMenu }) => {
           }
         ></i>
         <img src={process.env.PUBLIC_URL + "/profile.jpg"} alt="" />
-        <i className="bx bx-chevron-down bx-md" onClick={handleOpenMenu} id="dropdown-menu" ></i>
+        <i className="bx bx-menu bx-md" onClick={handleOpenMenu} id="dropdown-menu" ></i>
       </div>
     </div>
   );

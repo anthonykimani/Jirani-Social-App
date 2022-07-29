@@ -7,7 +7,7 @@ import Settings from "../pages/Settings";
 import Trending from "../pages/Trending";
 
 const App = () => {
-  const [openMenu, setOpenMenu] = useState(true);
+  const [openMenu, setOpenMenu] = useState(false);
   const [isDarkMode, setIsDarkMode] = useState(false);
 
   const handleOpenMenu = () => {
