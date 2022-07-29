@@ -1,13 +1,13 @@
 // import profilePic from "../images/profile.jpg";
 import { Link } from "react-router-dom";
 
-const Navbar = ({ darkMode, isDarkMode,handleOpenMenu }) => {
+const Navbar = ({ darkMode, isDarkMode, handleOpenMenu }) => {
   return (
     <div
       className="navbar-container"
       style={
         isDarkMode
-          ? { backgroundColor: "var(--bg-dark-color)",color:"white" }
+          ? { backgroundColor: "var(--bg-dark-color)", color: "white" }
           : { backgroundColor: "var(--bg-light-color" }
       }
     >
@@ -23,8 +23,11 @@ const Navbar = ({ darkMode, isDarkMode,handleOpenMenu }) => {
           <Link
             to={"/"}
             className="link"
-            style={{ textDecoration: 'none' ,
-          color:'var(--brand-color)'}}
+            style={
+              isDarkMode
+                ? { backgroundColor: "var(--bg-dark-color)",textDecoration:"none", color: "white" }
+                : { backgroundColor: "var(--bg-light-color",textDecoration:"none",color:"#004e98" }
+            }
           >
             Jirani Connect
           </Link>
@@ -41,11 +44,11 @@ const Navbar = ({ darkMode, isDarkMode,handleOpenMenu }) => {
           style={
             isDarkMode
               ? { color: "var(--bg-light-color)" }
-              : { color: "var(--bg-dark-color" }
+              : { color: "var(--bg-darkest-color" }
           }
         ></i>
         <img src={process.env.PUBLIC_URL + "/profile.jpg"} alt="" />
-        <i className="bx bx-chevron-down bx-md" onClick={handleOpenMenu}></i>
+        <i className="bx bx-chevron-down bx-md" onClick={handleOpenMenu} id="dropdown-menu" ></i>
       </div>
     </div>
   );
