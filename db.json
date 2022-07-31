@@ -1,4 +1,11 @@
 {
+  "login":[
+    {
+      "name":"Amos John",
+      "image":"https://img.freepik.com/free-photo/portrait-african-american-man_23-2149072214.jpg?w=740&t=st=1659023048~exp=1659023648~hmac=2ad3fbdc80255981bff25f5382e75d650f15ce920feeea7db1af5196acec00ff",
+      "email":"jkemboi@gmail.com"
+    }
+  ],
   "messages": [
     {
       "name": "Sheila Nyambura",

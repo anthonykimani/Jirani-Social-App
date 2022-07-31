@@ -86,7 +86,7 @@ const Posts = ({ posts, isDarkMode }) => {
             onClick={handleLike}
             id={liked ? "like" : ""}
           ></i>
-          <i className="bx bx-message-square-dots bx-md"></i>
+          <i className="bx bx-message-square-dots bx-md"  onClick={handleExpand} ></i>
           <i className="bx bx-share-alt bx-md"></i>
         </div>
         <div className="post-icons-right">
@@ -135,7 +135,7 @@ const Posts = ({ posts, isDarkMode }) => {
                     color: "var(--bg-light-color)",
                   }
                 : {
-                    backgroundColor: "var(--bg-light-grey-color",
+                    backgroundColor: "var(--bg-dark-grey-color",
                     color: "var(--bg-dark-color)",
                   }
             }
