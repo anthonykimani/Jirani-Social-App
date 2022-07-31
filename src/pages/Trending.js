@@ -10,6 +10,7 @@ const Trending = ({ darkMode, isDarkMode, isOpen, handleOpenMenu }) => {
     setLiked(!liked);
   };
 
+
   const trends = trending.map((element, index) => (
     <div
       className="trends-container"
@@ -52,7 +53,7 @@ const Trending = ({ darkMode, isDarkMode, isOpen, handleOpenMenu }) => {
             <i
               className={liked ? "bx bxs-heart bx-md" : "bx bx-heart bx-md"}
               onClick={handleLike}
-              style={liked ? { color: "red" } : { color: "black" }}
+              id={liked ? "like" : ""}
             ></i>
             <h3>{element.likes} Likes</h3>
           </div>
@@ -63,7 +64,7 @@ const Trending = ({ darkMode, isDarkMode, isOpen, handleOpenMenu }) => {
         </div>
         <div className="trends-footer">
           <div className="comment-bar">
-            <form>
+            {/* <form>
               <input
                 type="text"
                 placeholder="comment..."
@@ -90,7 +91,7 @@ const Trending = ({ darkMode, isDarkMode, isOpen, handleOpenMenu }) => {
                     : { backgroundColor: "var(--brand-color" }
                 }
               />
-            </form>
+            </form> */}
           </div>
           <div className="comments">
             <h4>{element.comments.commenter}</h4>

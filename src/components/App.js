@@ -5,6 +5,8 @@ import React, { useState } from "react";
 import Friends from "../pages/Friends";
 import Settings from "../pages/Settings";
 import Trending from "../pages/Trending";
+import Login from "../pages/Login";
+import Signup from "../pages/Signup";
 
 const App = () => {
   const [openMenu, setOpenMenu] = useState(false);
@@ -70,6 +72,28 @@ const App = () => {
             path="/trending"
             element={
               <Trending
+                isDarkMode={isDarkMode}
+                darkMode={handleMode}
+                handleOpenMenu={handleOpenMenu}
+                isOpen={openMenu}
+              />
+            }
+          />
+          <Route
+            path="/login"
+            element={
+              <Login
+                isDarkMode={isDarkMode}
+                darkMode={handleMode}
+                handleOpenMenu={handleOpenMenu}
+                isOpen={openMenu}
+              />
+            }
+          />
+          <Route
+            path="/signup"
+            element={
+              <Signup
                 isDarkMode={isDarkMode}
                 darkMode={handleMode}
                 handleOpenMenu={handleOpenMenu}
