@@ -5,7 +5,6 @@
 import React, { useState, useEffect } from "react";
 
 const Posts = ({ posts, isDarkMode }) => {
-  const [comments, setComments] = useState({});
   const [newComment, setNewComment] = useState("");
   const [postComment, setPostComment] = useState([]);
   const [liked, setLiked] = useState(false);
@@ -18,15 +17,15 @@ const Posts = ({ posts, isDarkMode }) => {
   };
 
   const handleAddcomment = (event) => {
-    console.log({ [event.target.name]: event.target.value });
-    setNewComment({ [event.target.name]: event.target.value });
+    // console.log({ [event.target.name]: event.target.value });
+    setNewComment({[event.target.name]: event.target.value });
   };
 
   const handleSubmit = (event) => {
     event.preventDefault();
-    setComments(newComment);
-    console.log(comments);
-    fetch("https://json-template-kim.herokuapp.com/comments", {
+    setPostComment([...postComment,newComment])
+    // console.log(...postComment,newComment);
+    fetch("https://json-template-kim.herokuapp.com/comments",{
       method: "POST",
       headers: {
         "Content-Type": "application/json",
@@ -39,10 +38,10 @@ const Posts = ({ posts, isDarkMode }) => {
     fetch("https://json-template-kim.herokuapp.com/comments")
       .then((response) => response.json())
       .then((data) => setPostComment(data));
-  }, [comments]);
+  }, []);
 
   const postedComment = postComment.map((element, index) => (
-    <div className="post-user-comments">
+    <div className="post-user-comments" key={index}>
       <i class="bx bxs-user-circle bx-md"></i>
       <h3>{element.comment}</h3>
     </div>
@@ -86,7 +85,10 @@ const Posts = ({ posts, isDarkMode }) => {
             onClick={handleLike}
             id={liked ? "like" : ""}
           ></i>
-          <i className="bx bx-message-square-dots bx-md"  onClick={handleExpand} ></i>
+          <i
+            className="bx bx-message-square-dots bx-md"
+            onClick={handleExpand}
+          ></i>
           <i className="bx bx-share-alt bx-md"></i>
         </div>
         <div className="post-icons-right">
