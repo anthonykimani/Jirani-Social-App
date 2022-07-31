@@ -25,7 +25,7 @@ const App = () => {
       <Router>
         <Routes>
           <Route
-            path="/home"
+            path="/"
             element={
               <Home
                 isDarkMode={isDarkMode}
@@ -91,7 +91,7 @@ const App = () => {
             }
           />
           <Route
-            path="/"
+            path="/signup"
             element={
               <Signup
                 isDarkMode={isDarkMode}

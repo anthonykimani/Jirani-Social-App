@@ -15,7 +15,7 @@ const Menu = ({ isDarkMode, isOpen }) => {
       >
         <li>
           <Link
-            to={"/home"}
+            to={"/"}
             className="link"
             style={
               isDarkMode

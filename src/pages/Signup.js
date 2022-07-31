@@ -1,8 +1,19 @@
 import "./signup.css";
-import { signInWithGoogle } from "../components/GoogleLogin";
+import { loginData,signInWithGoogle } from "../components/GoogleLogin";
 import { Link } from "react-router-dom";
+import React,{useState} from "react";
 
 const Signup = () => {
+    const [login,setLogin] = useState("");
+    
+    fetch("https://json-template-kim.herokuapp.com/login",{
+            method:"PATCH",
+            headers:{
+                "Content-Type": "application/json"
+            },
+            body:JSON.stringify()
+        })
+
   return (
     <div className="sign-up-container">
       <div className="sign-up-text-container">
