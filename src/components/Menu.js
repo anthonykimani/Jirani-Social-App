@@ -4,7 +4,7 @@ const Menu = ({ isDarkMode, isOpen }) => {
   return (
     <div
       className="menu-container"
-      style={isOpen ? { display: "block" } : { display: "none" }}
+      style={isOpen ? { display: "none" } : { display: "block" }}
     >
       <ul
         style={
