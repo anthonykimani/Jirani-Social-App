@@ -6,6 +6,7 @@
   padding: 0;
   margin: 0;
   font-family: "Roboto", sans-serif;
+  /* border:1px solid red; */
 }
 
 /* ADD CUSTOM CSS */
@@ -292,6 +293,7 @@ body {
 .timeline-left {
   display: flex;
   flex-direction: column;
+  align-items:center;
   max-width: 1300px;
   width: 100%;
 }
@@ -501,6 +503,8 @@ body {
   padding: 0px 10px;
   border-radius: 20px;
   margin: 10px 0px;
+  display:flex;
+  align-items:center;
 }
 
 .search-messages-container input {
@@ -541,6 +545,7 @@ body {
   width: 40px;
   height: 40px;
   border-radius: 50%;
+  padding:10px;
 }
 
 .message-text {
@@ -710,6 +715,7 @@ body {
   flex-direction: column;
   align-items: center;
   background-color: var(--bg-light-color);
+  padding:10px;
   max-width: 1200px;
   margin: 20px;
   border-radius: 20px;
@@ -731,6 +737,10 @@ body {
   height: 50px;
 }
 
+.trends-header-text h4{
+  color:var(--bg-grey-light-color);
+}
+
 .trends-header img {
   width: 40px;
   height: 40px;
@@ -747,7 +757,8 @@ body {
   font-family: var(--pop-font);
   font-weight: var(--weight-xs);
   background-color: var(--bg-grey-color);
-  width: 95%;
+  width: 90%;
+  border:1px solid var(--bg-light-grey-color);
   font-size: var(--xm);
   border-radius: 10px;
   margin: 0px 10px;
@@ -761,8 +772,8 @@ body {
   padding: 10px 20px;
 }
 
-.trends-icons-left h3 {
-  font-size: var(--xsm);
+.trends-icons-left h5 {
+  color:var(--bg-grey-light-color);
 }
 
 .trends-icons-right h3 {
@@ -834,7 +845,7 @@ body {
 @media (max-width: 1024px) {
   .menu-container ul li {
     display: flex;
-    height: 30px;
+    height: 60px;
     padding: 0px 0px;
     width: 120px;
   }

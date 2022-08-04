@@ -25,8 +25,16 @@ const Navbar = ({ darkMode, isDarkMode, handleOpenMenu }) => {
             className="link"
             style={
               isDarkMode
-                ? { backgroundColor: "var(--bg-dark-color)",textDecoration:"none", color: "white" }
-                : { backgroundColor: "var(--bg-light-color",textDecoration:"none",color:"#004e98" }
+                ? {
+                    backgroundColor: "var(--bg-dark-color)",
+                    textDecoration: "none",
+                    color: "white",
+                  }
+                : {
+                    backgroundColor: "var(--bg-light-color",
+                    textDecoration: "none",
+                    color: "#004e98",
+                  }
             }
           >
             Jirani Connect
@@ -48,7 +56,16 @@ const Navbar = ({ darkMode, isDarkMode, handleOpenMenu }) => {
           }
         ></i>
         <img src={process.env.PUBLIC_URL + "/profile.jpg"} alt="" />
-        <i className="bx bx-menu bx-md" onClick={handleOpenMenu} id="dropdown-menu" ></i>
+        <i
+          className="bx bx-menu bx-md"
+          onClick={handleOpenMenu}
+          id="dropdown-menu"
+          style={
+            isDarkMode
+              ? { color: "var(--bg-light-color)" }
+              : { color: "var(--bg-darkest-color" }
+          }
+        ></i>
       </div>
     </div>
   );
